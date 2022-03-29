@@ -1,14 +1,17 @@
-summary: Getting started with SwiftySimpleKeychain
+---
 id: getting_started
-category: Documentation
+summary: Getting started with SwiftySimpleKeychain
+categories: Documentation
 status: Published
+environments: web
 authors: Ezequiel (Kimi) Aceto
-Feedback link: https://eaceto.dev
+feedback link: https://github.com/eaceto/SwiftySimpleKeychain
+---
 
 # Getting Started
 
 ## Adding the dependency
-Duration: 0:01:00
+Duration: 0:00:30
 
 Adding this library as dependency can be done using Cocoapods or Swift Package Manager.
 
@@ -34,7 +37,7 @@ dependencies: [
 ```
 
 ## Instantiating the wrapper
-Duration: 0:01:00
+Duration: 0:00:30
 
 Getting an instance of **SwiftySimpleKeychain** can be done either using:
 
@@ -55,7 +58,7 @@ let keychain = SwiftySimpleKeychain.with("service-name", accessGroup: "my-group-
 ```
 
 ## Saving and retrieving items
-Duration: 0:01:00
+Duration: 0:00:30
 
 Saving a string, for example, can be easily done with:
 
