@@ -35,8 +35,10 @@ import LocalAuthentication
 /// ---------------------------------------------------
 
 /**
- *  Enum with Kechain items accessibility types. It's a mirror of **some** `kSecAttrAccessible` values.
- *  @see https://developer.apple.com/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values
+ *  Enum with Kechain items accessibility types. It's a mirror of **some**
+ *  `kSecAttrAccessible` values.
+ *  @see
+ *  https://developer.apple.com/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values
  */
 public enum SwiftySimpleKeychainItemAccessible: Int, Equatable {
     /**

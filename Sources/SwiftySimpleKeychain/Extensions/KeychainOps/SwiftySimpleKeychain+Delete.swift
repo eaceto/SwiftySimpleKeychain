@@ -27,7 +27,6 @@ import Foundation
 #endif
 
 public extension SwiftySimpleKeychain {
-    
     /**
      * Deletes an entry in the Keychain with the given **key**
      *

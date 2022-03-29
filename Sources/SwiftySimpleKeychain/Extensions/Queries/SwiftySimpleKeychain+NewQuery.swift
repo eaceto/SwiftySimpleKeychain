@@ -86,5 +86,4 @@ internal extension SwiftySimpleKeychain {
         }
         return accessibility
     }
-
 }

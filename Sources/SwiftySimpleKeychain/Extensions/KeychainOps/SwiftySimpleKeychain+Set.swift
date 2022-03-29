@@ -27,7 +27,6 @@ import Foundation
 #endif
 
 public extension SwiftySimpleKeychain {
-    
     /**
      * Sets a **Data** for the given key
      *

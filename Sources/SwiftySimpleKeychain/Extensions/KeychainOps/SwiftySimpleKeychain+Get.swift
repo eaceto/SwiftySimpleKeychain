@@ -27,7 +27,6 @@ import Foundation
 #endif
 
 public extension SwiftySimpleKeychain {
-    
     /**
      * Checks if the entry with **key** exists in the Keychain
      *

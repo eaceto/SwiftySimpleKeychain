@@ -38,13 +38,13 @@ import LocalAuthentication
  *  A simple helper class to deal with storing and retrieving values from  Keychain.
  *  It has support for sharing keychain items using Access Group and ffine grained accesibility
  *  over a specific Kyechain Item (Using Access Control).
- *  The support is only available for iOS and macOS, otherwise it will default using the coarse grained accesibility field.
+ *  The support is only available for iOS and macOS, otherwise it will default using
+ *  the coarse grained accesibility field.
  *  When a `NSString` or `NSData` is stored using Access Control and the accesibility flag
  *  `SwiftySimpleKeychainItem.accessibleAfterFirstUnlock`, iOS / macOS will prompt the user for
  *  it's passcode or pass a TouchID challenge (if available).
  */
 public class SwiftySimpleKeychain {
-
     /**
      *  Service name under all items are saved. Default value is Bundle Identifier or "default" if not available
      */
@@ -129,7 +129,6 @@ public class SwiftySimpleKeychain {
 }
 
 public extension SwiftySimpleKeychain {
-    
     /**
      * Instantiates a SwiftySimpleKeychain
      *
