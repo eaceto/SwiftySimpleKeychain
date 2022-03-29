@@ -1,6 +1,6 @@
 # SwiftySimpleKeychain
 
-A wrapper (written only in Swift) to make it really easy to deal with iOS, macOS, watchOS and Linux Keychain and store your user's credentials securely. Based on Auth0's SimpleKeychain (Thank you @Auth0!).
+A wrapper (written only in Swift) to make it really easy to deal with iOS, macOS, watchOS and Linux Keychain and store your user's credentials securely. Based on [Auth0's SimpleKeychain](https://github.com/auth0/SimpleKeychain) Thank you @Auth0!
 
 ## Table of Contents
 
