@@ -1,0 +1,92 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Getting Started</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="getting_started"
+                  title="Getting Started"
+                  environment="web"
+                  feedback-link="https://eaceto.dev">
+    
+      <google-codelab-step label="Adding the dependency" duration="1">
+        <p>Adding this library as dependency can be done using Cocoapods or Swift Package Manager.</p>
+<h2 is-upgraded>Cocoapods</h2>
+<p>In your <strong>Podfile</strong> add the following line to add <strong>SwiftySimpleKeychain</strong>. Where the latests version can be found on the project&#39;s GitHub Page.</p>
+<pre><code language="language-ruby" class="language-ruby">pod &#39;SwiftySimpleKeychain&#39;, &#39;~&gt; &lt;&lt;latest major version&gt;&gt;&#39;
+</code></pre>
+<h2 is-upgraded>Swift Package Manager</h2>
+<pre><code language="language-swift" class="language-swift">// Inside Package definition
+dependencies: [
+    .package(url: &#34;https://github.com/eaceto/SwiftySimpleKeychain.git&#34;, .upToNextMajor(&#34;&lt;&lt;latest major version&gt;&gt;&#34;))
+]
+
+// Inside Target definition
+dependencies: [
+    &#34;SwiftySimpleKeychain&#34;
+]
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Instantiating the wrapper" duration="1">
+        <p>Getting an instance of <strong>SwiftySimpleKeychain</strong> can be done either using:</p>
+<pre><code language="language-swift" class="language-swift">let keychain = SwiftySimpleKeychain(with: &#34;service-name&#34;)
+</code></pre>
+<p>or</p>
+<pre><code language="language-swift" class="language-swift">let keychain = SwiftySimpleKeychain.with(&#34;service-name&#34;)
+</code></pre>
+<p>and optional <strong>Access Group</strong> can be specified when the keychain&#39;s entries needs to be accessed from another App / Target.</p>
+<pre><code language="language-swift" class="language-swift">let keychain = SwiftySimpleKeychain.with(&#34;service-name&#34;, accessGroup: &#34;my-group-identifier&#34;)
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Saving and retrieving items" duration="1">
+        <p>Saving a string, for example, can be easily done with:</p>
+<pre><code language="language-swift" class="language-swift">_ = keychain.set(string: &#34;a secret string&#34;, for: &#34;aKey&#34;)
+</code></pre>
+<p>if you would like to know if saving the entry failed and why,</p>
+<pre><code language="language-swift" class="language-swift">let setResult = keychain.set(string: &#34;a secret string&#34;, for: &#34;aKey&#34;)
+if case let .failure(error) = setResult {
+    print(error)
+}
+return
+</code></pre>
+<p>Reading the stored value can be done as follows:</p>
+<pre><code language="language-swift" class="language-swift">let value = keychain.string(for: &#34;aKey&#34;)
+</code></pre>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

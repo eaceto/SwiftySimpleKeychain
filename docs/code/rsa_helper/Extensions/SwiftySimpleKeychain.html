@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SwiftySimpleKeychain Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/SwiftySimpleKeychain" class="dashAnchor"></a>
+    <a title="SwiftySimpleKeychain Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SwiftySimpleKeychain_RSAHelper 1.0.0 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SwiftySimpleKeychain_RSAHelper Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        SwiftySimpleKeychain Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SwiftySimpleKeychainRSAKeySize.html">SwiftySimpleKeychainRSAKeySize</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/SwiftySimpleKeychain.html">SwiftySimpleKeychain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:30SwiftySimpleKeychain_RSAHelper17SecKeyErrorResulta">SecKeyErrorResult</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SwiftySimpleKeychain</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">SwiftySimpleKeychain</span></code></pre>
+
+                </div>
+              </div>
+            <p>An extension of SwiftySimpleKeychain to deal with generation, retrieving and deletion of
+public / private RSA keys using the Keychain.
+It honours the configuration (and access control) of <strong>SwiftySimpleKeychain</strong></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE18generateRSAKeyPair4with12publicKeyTag07privatejK0s6ResultOyytAA0abC5ErrorOGAC0abcF4SizeO_S2StF"></a>
+                    <a name="//apple_ref/swift/Method/generateRSAKeyPair(with:publicKeyTag:privateKeyTag:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE18generateRSAKeyPair4with12publicKeyTag07privatejK0s6ResultOyytAA0abC5ErrorOGAC0abcF4SizeO_S2StF">generateRSAKeyPair(with:<wbr>publicKeyTag:<wbr>privateKeyTag:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates a RSA key pair with the specified key size and stores it in the Keychain</p>
+
+<p>Usage:</p>
+<pre class="highlight swift"><code>  <span class="n">keychain</span> <span class="o">=</span> <span class="kt">SwiftySimpleKeychain</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="s">"service-name"</span><span class="p">)</span>
+  <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">keychain</span><span class="o">.</span><span class="nf">generateRSAKeyPair</span><span class="p">()</span>
+  <span class="k">if</span> <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="o">=</span> <span class="n">result</span> <span class="p">{</span>
+      <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+  <span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">generateRSAKeyPair</span><span class="p">(</span><span class="n">with</span> <span class="nv">length</span><span class="p">:</span> <span class="kt"><a href="../Enums/SwiftySimpleKeychainRSAKeySize.html">SwiftySimpleKeychainRSAKeySize</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">size2048Bits</span><span class="p">,</span>
+                        <span class="nv">publicKeyTag</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"public"</span><span class="p">,</span>
+                        <span class="nv">privateKeyTag</span> <span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"private"</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">VoidErrorResult</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>length</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the length (int bits) of the RSA keys. Defaults to 2048 bits</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>publicKeyTag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a tag (identifier) for the public key. Defaults to <em>public</em></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>privateKeyTag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a tag (identifier) for the private key. Defaults to <em>private</em></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE16rsaKeyDataResult4withs0H0Oy10Foundation0G0VAA0abC5ErrorOGSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/rsaKeyDataResult(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE16rsaKeyDataResult4withs0H0Oy10Foundation0G0VAA0abC5ErrorOGSS_tF">rsaKeyDataResult(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Finds a Key stored in the <strong>Keychain</strong> and returns a <strong>DataErrorResult</strong>
+ Use this method if you would like to know why fetching a key fails, and an error
+ is present in the <em>failure</em> response.</p>
+
+<p>Usage:</p>
+<pre class="highlight swift"><code> <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">keychain</span><span class="o">.</span><span class="nf">rsaKeyDataResult</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="s">"publicKeyTag"</span><span class="p">)</span>
+ <span class="k">guard</span> <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="n">publicKeyData</span><span class="p">)</span> <span class="o">=</span> <span class="n">publicKeyDataResult</span> <span class="k">else</span> <span class="p">{</span>
+     <span class="k">if</span> <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="o">=</span> <span class="n">publicKeyDataResult</span> <span class="p">{</span>
+         <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+         <span class="nf">fail</span><span class="p">(</span><span class="s">"Fail to get Public Key. </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+     <span class="p">}</span>
+     <span class="k">return</span>
+ <span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rsaKeyDataResult</span><span class="p">(</span><span class="n">with</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DataErrorResult</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a tag (identifier) for the key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE10rsaKeyData4with10Foundation0G0VSgSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/rsaKeyData(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE10rsaKeyData4with10Foundation0G0VSgSS_tF">rsaKeyData(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Finds a Key stored in the <strong>Keychain</strong> and returns a <strong>Data</strong> if found
+ Use this method if you want a simple response (data or zero) regardless of error on failure</p>
+
+<p>Usage:</p>
+<pre class="highlight swift"><code> <span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="n">keychain</span><span class="o">.</span><span class="nf">rsaKeyData</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="s">"publicKeyTag"</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rsaKeyData</span><span class="p">(</span><span class="n">with</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a tag (identifier) for the key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE9hasRSAKey4withSbSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/hasRSAKey(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE9hasRSAKey4withSbSS_tF">hasRSAKey(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cheks if there is a key with the provided <strong>tag</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hasRSAKey</span><span class="p">(</span><span class="n">with</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a tag (identifier) for the key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE12deleteRSAKey4withSbSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/deleteRSAKey(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE12deleteRSAKey4withSbSS_tF">deleteRSAKey(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes a RSA Key identified with the provided <strong>tag</strong></p>
+
+<p>Usage:</p>
+<pre class="highlight swift"><code> <span class="k">let</span> <span class="nv">deleted</span> <span class="o">=</span> <span class="n">keychain</span><span class="o">.</span><span class="nf">deleteRSAKey</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="s">"publicKeyTag"</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteRSAKey</span><span class="p">(</span><span class="n">with</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a tag (identifier) for the key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE15rsaSecKeyResult4withs0H0OySo0fG3RefaAA0abC5ErrorOGSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/rsaSecKeyResult(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE15rsaSecKeyResult4withs0H0OySo0fG3RefaAA0abC5ErrorOGSS_tF">rsaSecKeyResult(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Finds a Key stored in the <strong>Keychain</strong> and returns a <strong>SecKeyErrorResult</strong></p>
+<pre class="highlight swift"><code>  <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">keychain</span><span class="o">.</span><span class="nf">rsaSecKeyResult</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="s">"publicTag"</span><span class="p">)</span>
+  <span class="k">if</span> <span class="k">case</span> <span class="kd">let</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="o">=</span> <span class="n">result</span> <span class="p">{</span>
+      <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+  <span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rsaSecKeyResult</span><span class="p">(</span><span class="n">with</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:30SwiftySimpleKeychain_RSAHelper17SecKeyErrorResulta">SecKeyErrorResult</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a tag (identifier) for the key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE9rsaSecKey4withSo0fG3RefaSgSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/rsaSecKey(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20SwiftySimpleKeychainAAC0abC10_RSAHelperE9rsaSecKey4withSo0fG3RefaSgSS_tF">rsaSecKey(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Finds a Key stored in the <strong>Keychain</strong> and returns a <strong>SecKeyErrorResult</strong></p>
+<pre class="highlight swift"><code>  <span class="k">if</span> <span class="k">let</span> <span class="nv">publicKey</span> <span class="o">=</span> <span class="n">keychain</span><span class="o">.</span><span class="nf">rsaSecKey</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="s">"publicTag"</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rsaSecKey</span><span class="p">(</span><span class="n">with</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">SecKey</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a tag (identifier) for the  key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://eaceto.dev" target="_blank" rel="external noopener">Ezequiel (Kimi) Aceto</a>. All rights reserved. (Last updated: 2022-03-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2022-03-29T15:14:41+02:00",
+  "id": "getting_started",
+  "duration": 3,
+  "title": "Getting Started",
+  "authors": "Ezequiel (Kimi) Aceto",
+  "summary": "Getting started with SwiftySimpleKeychain",
+  "source": "Development/codelabs/getting_started.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": null,
+  "tags": [],
+  "feedback": "https://eaceto.dev",
+  "url": "getting_started"
+}
