@@ -6,8 +6,8 @@ A wrapper (written only in Swift) to make it really easy to deal with iOS, macOS
 
 - [Requirements](#requirements)
 - [Installation](#installation)
-    - Cocoapods(#cocoapods)
-    - Swifth Package Manager(#swift-package-manager)
+    - [Cocoapods](#cocoapods)
+    - [Swifth Package Manager](#swift-package-manager)
 - [Documentation](#documentation)
 
 ## Requirements
