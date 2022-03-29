@@ -5,7 +5,7 @@ import PackageDescription
 
 // BEGIN CI/CD Space
 let libraryName = "SwiftySimpleKeychain"
-let libraryVersion = "1.0.0"
+let libraryVersion = "1.0.1"
 // END CI/CD Space
 
 let package = Package(
