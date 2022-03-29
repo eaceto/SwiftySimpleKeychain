@@ -36,5 +36,8 @@ fastlane/screenshots/
 .build
 Package.resolved
 
+#SonarQube
+sonar-reports
+
 #Danger
 ~/.danger-swift
