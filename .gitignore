@@ -35,3 +35,6 @@ fastlane/screenshots/
 #SwiftPM
 .build
 Package.resolved
+
+#Danger
+~/.danger-swift
