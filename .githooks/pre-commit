@@ -1,0 +1,58 @@
+#!/bin/bash
+
+# Git Hook for SwiftLint 
+# Runs at every commit and checks for an error.
+# For the test, you can run `git commit` with an empty` commit message`
+
+export PATH=/usr/local/bin:/opt/homebrew/bin:$PATH
+
+SWIFTLINT=$(which swiftlint)
+
+if [[ -e "${SWIFTLINT}" ]]; then
+	echo "SwiftLint Start..."
+else
+	echo "SwiftLint is not present in your environment, download from https://github.com/realm/SwiftLint"
+	exit 1
+fi
+
+RESULT=$($SWIFTLINT lint --quiet --config .swiftlint.yml)
+
+if [ "$RESULT" == '' ]; then
+	printf "SwiftLint Finished.\n"
+else
+	echo ""
+	printf "SwiftLint Failed. Please check below:\n"
+
+	HAS_ERROR=false
+
+	while read -r line; do
+		FILEPATH=$(echo $line | cut -d : -f 1)
+		L=$(echo $line | cut -d : -f 2)
+		C=$(echo $line | cut -d : -f 3)
+		TYPE=$(echo $line | cut -d : -f 4 | cut -c 2-)
+		MESSAGE=$(echo $line | cut -d : -f 5 | cut -c 2-)
+		DESCRIPTION=$(echo $line | cut -d : -f 6 | cut -c 2-)
+		printf "\n $TYPE\n"
+		printf "    $FILEPATH:$L:$C\n"
+		printf "    $MESSAGE - $DESCRIPTION\n"
+
+		if [ "$TYPE" == "error" ]; then
+			HAS_ERROR=true;
+		fi
+ 	
+	done <<< "$RESULT"
+
+	if [ $HAS_ERROR == true ]; then
+		printf "\nCOMMIT ABORTED. Please fix errors before commiting.\n"
+		exit 1
+	fi
+fi
+
+echo ""
+
+VERSION_SPM=$(grep "^let libraryVersion" Package.swift | sed -E "s/let libraryVersion.*\"(.*)\"/\1/g")
+VERSION_POD=$(grep "^libraryVersion" *.podspec | sed -E "s/libraryVersion.*\"(.*)\"/\1/g")
+if [ "$VERSION_SPM" != "$VERSION_POD" ]; then
+	echo "Version in Podspec is not the same as in Package.swift. This is an error! Aborting."
+	exit 1
+fi

@@ -43,9 +43,9 @@ internal extension SwiftySimpleKeychain {
 
             if error == nil || accessControl != nil {
                 query[kSecAttrAccessControl as String] = accessControl
-                #if canImport(LocalAuthentication)
+#if (os(macOS) || os (iOS)) && canImport(LocalAuthentication)
                 query[kSecUseAuthenticationContext as String] = localAuthenticationContext
-                #endif
+#endif
             }
         }
 
@@ -62,19 +62,19 @@ internal extension SwiftySimpleKeychain {
         case .afterFirstUnlock:
             accessibility = kSecAttrAccessibleAfterFirstUnlock
         case .always:
-            #if targetEnvironment(macCatalyst)
+#if targetEnvironment(macCatalyst)
             accessibility = kSecAttrAccessibleAfterFirstUnlock
-            #else
+#else
             accessibility = kSecAttrAccessibleAlways
-            #endif
+#endif
         case .afterFirstUnlockThisDeviceOnly:
             accessibility = kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
         case .alwaysThisDeviceOnly:
-            #if targetEnvironment(macCatalyst)
+#if targetEnvironment(macCatalyst)
             accessibility = kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
-            #else
+#else
             accessibility = kSecAttrAccessibleAlwaysThisDeviceOnly
-            #endif
+#endif
         case .whenPasscodeSetThisDeviceOnly:
             #if os(iOS)
             accessibility = kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly

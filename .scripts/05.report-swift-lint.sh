@@ -4,10 +4,10 @@
 #  - Place this file next to the Package.swift in your project
 #  - Open a terminal and cd to the project directory
 #  - Run: brew install swiftlint
-#  - Run: chmod +x ./.scripts/02.report-swift-lint.sh
+#  - Run: chmod +x ./.scripts/05.report-swift-lint.sh
 #
 # Usage:
-#  Run: ./.scripts/02.report-swift-lint.sh
+#  Run: ./.scripts/05.report-swift-lint.sh
 #
 
 

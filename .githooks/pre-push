@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Git Hook for SwiftLint 
+
+## Run Swiftlint and (auto)fix errors
+export PATH=/usr/local/bin:/opt/homebrew/bin:$PATH
+
+SWIFTLINT=$(which swiftlint)
+
+if [[ -e "${SWIFTLINT}" ]]; then
+	echo "SwiftLint Start..."
+else
+	echo "SwiftLint is not present in your environment, download from https://github.com/realm/SwiftLint"
+	exit 1
+fi
+
+$SWIFTLINT lint --fix
+
+VERSION_SPM=$(grep "^let libraryVersion" Package.swift | sed -E "s/let libraryVersion.*\"(.*)\"/\1/g")
+VERSION_POD=$(grep "^libraryVersion" *.podspec | sed -E "s/libraryVersion.*\"(.*)\"/\1/g")
+if [ "$VERSION_SPM" != "$VERSION_POD" ]; then
+	echo "Version in Podspec is not the same as in Package.swift. This is an error! Aborting."
+	exit 1
+fi

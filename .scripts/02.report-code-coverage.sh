@@ -4,10 +4,10 @@
 #  - Place this file next to the Package.swift in your project
 #  - Open a terminal and cd to the project directory
 #  - Run: brew install lcov
-#  - Run: chmod +x ./.scripts/01.report-code-coverage.sh
+#  - Run: chmod +x ./.scripts/02.report-code-coverage.sh
 #
 # Usage:
-#  Run: ./.scripts/01.report-code-coverage.sh
+#  Run: ./.scripts/02.report-code-coverage.sh
 #  Command click the HTML output path to open the coverage report in your browser
 #
 

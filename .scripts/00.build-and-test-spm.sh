@@ -4,17 +4,17 @@
 #  - Place this file next to the Package.swift in your project
 #  - Open a terminal and cd to the project directory
 #  - Run: brew install lcov
-#  - Run: chmod +x ./.scripts/00.build-and-test.sh
+#  - Run: chmod +x ./.scripts/00.build-and-test-spm.sh
 #
 # Usage:
-#  Run: ./.scripts/00.build-and-test.sh
+#  Run: ./.scripts/00.build-and-test-spm.sh
 #
 
 # Check that script is run from 
 SWIFT_PACKAGE="Package.swift"
 if [ ! -f "$SWIFT_PACKAGE" ]; then
     echo "Script should be run from the directory where $SWIFT_PACKAGE exists."
-    echo "run as: ./.script/02.report-code-coverage.sh"
+    echo "run as: ./.script/00.build-and-test-spm.sh"
     exit -1
 fi
 

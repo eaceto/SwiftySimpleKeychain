@@ -1,0 +1,3270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"swiftysimplekeychain::SwiftySimpleKeychainPackageTests::ProductTarget" /* SwiftySimpleKeychainPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_395 /* Build configuration list for PBXAggregateTarget "SwiftySimpleKeychainPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_398 /* PBXTargetDependency */,
+				OBJ_400 /* PBXTargetDependency */,
+			);
+			name = SwiftySimpleKeychainPackageTests;
+			productName = SwiftySimpleKeychainPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3FC4E58027F4B36C00625F2E /* iOSTestHostAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4E57F27F4B36C00625F2E /* iOSTestHostAppApp.swift */; };
+		3FC4E58227F4B36C00625F2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4E58127F4B36C00625F2E /* ContentView.swift */; };
+		3FC4E58427F4B36C00625F2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4E58327F4B36C00625F2E /* Assets.xcassets */; };
+		3FC4E58727F4B36C00625F2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4E58627F4B36C00625F2E /* Preview Assets.xcassets */; };
+		OBJ_189 /* CwlCatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* CwlCatchException.swift */; };
+		OBJ_191 /* CwlCatchExceptionSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlcatchexception::CwlCatchExceptionSupport::Product" /* CwlCatchExceptionSupport.framework */; };
+		OBJ_199 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* Package.swift */; };
+		OBJ_204 /* CwlCatchException.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* CwlCatchException.m */; };
+		OBJ_211 /* CwlMachBadInstructionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* CwlMachBadInstructionHandler.m */; };
+		OBJ_212 /* mach_excServer.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* mach_excServer.c */; };
+		OBJ_214 /* CwlMachBadInstructionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* CwlMachBadInstructionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		OBJ_221 /* CwlCatchBadInstructionPosix.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* CwlCatchBadInstructionPosix.swift */; };
+		OBJ_228 /* CwlBadInstructionException.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* CwlBadInstructionException.swift */; };
+		OBJ_229 /* CwlCatchBadInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* CwlCatchBadInstruction.swift */; };
+		OBJ_230 /* CwlDarwinDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* CwlDarwinDefinitions.swift */; };
+		OBJ_232 /* CwlCatchException.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlcatchexception::CwlCatchException::Product" /* CwlCatchException.framework */; };
+		OBJ_233 /* CwlCatchExceptionSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlcatchexception::CwlCatchExceptionSupport::Product" /* CwlCatchExceptionSupport.framework */; };
+		OBJ_234 /* CwlMachBadInstructionHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlpreconditiontesting::CwlMachBadInstructionHandler::Product" /* CwlMachBadInstructionHandler.framework */; };
+		OBJ_243 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* Package.swift */; };
+		OBJ_249 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* AdapterProtocols.swift */; };
+		OBJ_250 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* AssertionDispatcher.swift */; };
+		OBJ_251 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* AssertionRecorder.swift */; };
+		OBJ_252 /* NMBExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* NMBExpectation.swift */; };
+		OBJ_253 /* NimbleEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* NimbleEnvironment.swift */; };
+		OBJ_254 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* NimbleXCTestHandler.swift */; };
+		OBJ_255 /* ExceptionCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* ExceptionCapture.swift */; };
+		OBJ_256 /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* DSL+Wait.swift */; };
+		OBJ_257 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* DSL.swift */; };
+		OBJ_258 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Expectation.swift */; };
+		OBJ_259 /* ExpectationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* ExpectationMessage.swift */; };
+		OBJ_260 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Expression.swift */; };
+		OBJ_261 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* FailureMessage.swift */; };
+		OBJ_262 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* AllPass.swift */; };
+		OBJ_263 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Async.swift */; };
+		OBJ_264 /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* BeAKindOf.swift */; };
+		OBJ_265 /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* BeAnInstanceOf.swift */; };
+		OBJ_266 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* BeCloseTo.swift */; };
+		OBJ_267 /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* BeEmpty.swift */; };
+		OBJ_268 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* BeGreaterThan.swift */; };
+		OBJ_269 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* BeGreaterThanOrEqualTo.swift */; };
+		OBJ_270 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* BeIdenticalTo.swift */; };
+		OBJ_271 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* BeLessThan.swift */; };
+		OBJ_272 /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* BeLessThanOrEqual.swift */; };
+		OBJ_273 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* BeLogical.swift */; };
+		OBJ_274 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* BeNil.swift */; };
+		OBJ_275 /* BeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* BeResult.swift */; };
+		OBJ_276 /* BeVoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* BeVoid.swift */; };
+		OBJ_277 /* BeWithin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* BeWithin.swift */; };
+		OBJ_278 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* BeginWith.swift */; };
+		OBJ_279 /* BeginWithPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* BeginWithPrefix.swift */; };
+		OBJ_280 /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* Contain.swift */; };
+		OBJ_281 /* ContainElementSatisfying.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* ContainElementSatisfying.swift */; };
+		OBJ_282 /* ElementsEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* ElementsEqual.swift */; };
+		OBJ_283 /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* EndWith.swift */; };
+		OBJ_284 /* Equal+Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* Equal+Tuple.swift */; };
+		OBJ_285 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* Equal.swift */; };
+		OBJ_286 /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* HaveCount.swift */; };
+		OBJ_287 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* Match.swift */; };
+		OBJ_288 /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* MatchError.swift */; };
+		OBJ_289 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* MatcherProtocols.swift */; };
+		OBJ_290 /* PostNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* PostNotification.swift */; };
+		OBJ_291 /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* Predicate.swift */; };
+		OBJ_292 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* RaisesException.swift */; };
+		OBJ_293 /* SatisfyAllOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* SatisfyAllOf.swift */; };
+		OBJ_294 /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* SatisfyAnyOf.swift */; };
+		OBJ_295 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* ThrowAssertion.swift */; };
+		OBJ_296 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* ThrowError.swift */; };
+		OBJ_297 /* ToSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* ToSucceed.swift */; };
+		OBJ_298 /* Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* Await.swift */; };
+		OBJ_299 /* DispatchTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* DispatchTimeInterval.swift */; };
+		OBJ_300 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* Errors.swift */; };
+		OBJ_301 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* SourceLocation.swift */; };
+		OBJ_302 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* Stringers.swift */; };
+		OBJ_304 /* CwlPosixPreconditionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlpreconditiontesting::CwlPosixPreconditionTesting::Product" /* CwlPosixPreconditionTesting.framework */; };
+		OBJ_305 /* CwlPreconditionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlpreconditiontesting::CwlPreconditionTesting::Product" /* CwlPreconditionTesting.framework */; };
+		OBJ_306 /* CwlCatchException.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlcatchexception::CwlCatchException::Product" /* CwlCatchException.framework */; };
+		OBJ_307 /* CwlCatchExceptionSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlcatchexception::CwlCatchExceptionSupport::Product" /* CwlCatchExceptionSupport.framework */; };
+		OBJ_308 /* CwlMachBadInstructionHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlpreconditiontesting::CwlMachBadInstructionHandler::Product" /* CwlMachBadInstructionHandler.framework */; };
+		OBJ_319 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* Package.swift */; };
+		OBJ_325 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* Behavior.swift */; };
+		OBJ_326 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_126 /* Callsite.swift */; };
+		OBJ_327 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_128 /* Configuration.swift */; };
+		OBJ_328 /* QuickConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* QuickConfiguration.swift */; };
+		OBJ_329 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_131 /* DSL.swift */; };
+		OBJ_330 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_132 /* World+DSL.swift */; };
+		OBJ_331 /* ErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* ErrorUtility.swift */; };
+		OBJ_332 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_134 /* Example.swift */; };
+		OBJ_333 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* ExampleGroup.swift */; };
+		OBJ_334 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* ExampleMetadata.swift */; };
+		OBJ_335 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* Filter.swift */; };
+		OBJ_336 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* Closures.swift */; };
+		OBJ_337 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_140 /* ExampleHooks.swift */; };
+		OBJ_338 /* HooksPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_141 /* HooksPhase.swift */; };
+		OBJ_339 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_142 /* SuiteHooks.swift */; };
+		OBJ_340 /* NSBundle+CurrentTestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_143 /* NSBundle+CurrentTestBundle.swift */; };
+		OBJ_341 /* QuickMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_144 /* QuickMain.swift */; };
+		OBJ_342 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_145 /* QuickSelectedTestSuiteBuilder.swift */; };
+		OBJ_343 /* QuickSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_146 /* QuickSpec.swift */; };
+		OBJ_344 /* QuickTestObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_147 /* QuickTestObservation.swift */; };
+		OBJ_345 /* QuickTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_148 /* QuickTestSuite.swift */; };
+		OBJ_346 /* String+C99ExtendedIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_149 /* String+C99ExtendedIdentifier.swift */; };
+		OBJ_347 /* URL+FileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_150 /* URL+FileName.swift */; };
+		OBJ_348 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_151 /* World.swift */; };
+		OBJ_350 /* QuickObjCRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "quick::QuickObjCRuntime::Product" /* QuickObjCRuntime.framework */; };
+		OBJ_357 /* QuickSpecBase.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_153 /* QuickSpecBase.m */; };
+		OBJ_359 /* QuickSpecBase.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_155 /* QuickSpecBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		OBJ_360 /* QuickObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_156 /* QuickObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		OBJ_367 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_157 /* Package.swift */; };
+		OBJ_373 /* SwiftySimpleKeychain+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SwiftySimpleKeychain+Delete.swift */; };
+		OBJ_374 /* SwiftySimpleKeychain+Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* SwiftySimpleKeychain+Get.swift */; };
+		OBJ_375 /* SwiftySimpleKeychain+Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* SwiftySimpleKeychain+Set.swift */; };
+		OBJ_376 /* SwiftySimpleKeychain+BaseQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* SwiftySimpleKeychain+BaseQuery.swift */; };
+		OBJ_377 /* SwiftySimpleKeychain+FindQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* SwiftySimpleKeychain+FindQuery.swift */; };
+		OBJ_378 /* SwiftySimpleKeychain+NewQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* SwiftySimpleKeychain+NewQuery.swift */; };
+		OBJ_379 /* SwiftySimpleKeychain+UpdateQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SwiftySimpleKeychain+UpdateQuery.swift */; };
+		OBJ_380 /* SwiftySimpleKeychainError+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* SwiftySimpleKeychainError+Init.swift */; };
+		OBJ_381 /* DataErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DataErrorResult.swift */; };
+		OBJ_382 /* StringErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* StringErrorResult.swift */; };
+		OBJ_383 /* VoidErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* VoidErrorResult.swift */; };
+		OBJ_384 /* SwiftySimpleKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* SwiftySimpleKeychain.swift */; };
+		OBJ_385 /* SwiftySimpleKeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* SwiftySimpleKeychainError.swift */; };
+		OBJ_386 /* SwiftySimpleKeychainItemAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* SwiftySimpleKeychainItemAccessible.swift */; };
+		OBJ_393 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_406 /* SwiftySimpleKeychainSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* SwiftySimpleKeychainSpec.swift */; };
+		OBJ_408 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "nimble::Nimble::Product" /* Nimble.framework */; };
+		OBJ_409 /* CwlPosixPreconditionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlpreconditiontesting::CwlPosixPreconditionTesting::Product" /* CwlPosixPreconditionTesting.framework */; };
+		OBJ_410 /* CwlPreconditionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlpreconditiontesting::CwlPreconditionTesting::Product" /* CwlPreconditionTesting.framework */; };
+		OBJ_411 /* CwlCatchException.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlcatchexception::CwlCatchException::Product" /* CwlCatchException.framework */; };
+		OBJ_412 /* CwlCatchExceptionSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlcatchexception::CwlCatchExceptionSupport::Product" /* CwlCatchExceptionSupport.framework */; };
+		OBJ_413 /* CwlMachBadInstructionHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlpreconditiontesting::CwlMachBadInstructionHandler::Product" /* CwlMachBadInstructionHandler.framework */; };
+		OBJ_414 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "quick::Quick::Product" /* Quick.framework */; };
+		OBJ_415 /* QuickObjCRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "quick::QuickObjCRuntime::Product" /* QuickObjCRuntime.framework */; };
+		OBJ_416 /* SwiftySimpleKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swiftysimplekeychain::SwiftySimpleKeychain::Product" /* SwiftySimpleKeychain.framework */; };
+		OBJ_431 /* SwiftySimpleKeychain+RSAHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* SwiftySimpleKeychain+RSAHelper.swift */; };
+		OBJ_432 /* SwiftySimpleKeychainError+RSAHelperInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* SwiftySimpleKeychainError+RSAHelperInit.swift */; };
+		OBJ_433 /* SecKeyErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* SecKeyErrorResult.swift */; };
+		OBJ_434 /* SwiftySimpleKeychainRSAKeySize.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* SwiftySimpleKeychainRSAKeySize.swift */; };
+		OBJ_436 /* SwiftySimpleKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swiftysimplekeychain::SwiftySimpleKeychain::Product" /* SwiftySimpleKeychain.framework */; };
+		OBJ_442 /* SwiftySimpleKeychain_RSAHelperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* SwiftySimpleKeychain_RSAHelperSpec.swift */; };
+		OBJ_444 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "nimble::Nimble::Product" /* Nimble.framework */; };
+		OBJ_445 /* CwlPosixPreconditionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlpreconditiontesting::CwlPosixPreconditionTesting::Product" /* CwlPosixPreconditionTesting.framework */; };
+		OBJ_446 /* CwlPreconditionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlpreconditiontesting::CwlPreconditionTesting::Product" /* CwlPreconditionTesting.framework */; };
+		OBJ_447 /* CwlCatchException.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlcatchexception::CwlCatchException::Product" /* CwlCatchException.framework */; };
+		OBJ_448 /* CwlCatchExceptionSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlcatchexception::CwlCatchExceptionSupport::Product" /* CwlCatchExceptionSupport.framework */; };
+		OBJ_449 /* CwlMachBadInstructionHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "cwlpreconditiontesting::CwlMachBadInstructionHandler::Product" /* CwlMachBadInstructionHandler.framework */; };
+		OBJ_450 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "quick::Quick::Product" /* Quick.framework */; };
+		OBJ_451 /* QuickObjCRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "quick::QuickObjCRuntime::Product" /* QuickObjCRuntime.framework */; };
+		OBJ_452 /* SwiftySimpleKeychain_RSAHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swiftysimplekeychain::SwiftySimpleKeychain_RSAHelper::Product" /* SwiftySimpleKeychain_RSAHelper.framework */; };
+		OBJ_453 /* SwiftySimpleKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swiftysimplekeychain::SwiftySimpleKeychain::Product" /* SwiftySimpleKeychain.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FC4E55B27F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swiftysimplekeychain::SwiftySimpleKeychain";
+			remoteInfo = SwiftySimpleKeychain;
+		};
+		3FC4E55C27F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "nimble::Nimble";
+			remoteInfo = Nimble;
+		};
+		3FC4E55D27F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlpreconditiontesting::CwlPosixPreconditionTesting";
+			remoteInfo = CwlPosixPreconditionTesting;
+		};
+		3FC4E55E27F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlpreconditiontesting::CwlPreconditionTesting";
+			remoteInfo = CwlPreconditionTesting;
+		};
+		3FC4E55F27F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlcatchexception::CwlCatchException";
+			remoteInfo = CwlCatchException;
+		};
+		3FC4E56027F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlcatchexception::CwlCatchExceptionSupport";
+			remoteInfo = CwlCatchExceptionSupport;
+		};
+		3FC4E56127F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlcatchexception::CwlCatchExceptionSupport";
+			remoteInfo = CwlCatchExceptionSupport;
+		};
+		3FC4E56227F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlpreconditiontesting::CwlMachBadInstructionHandler";
+			remoteInfo = CwlMachBadInstructionHandler;
+		};
+		3FC4E56327F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlcatchexception::CwlCatchException";
+			remoteInfo = CwlCatchException;
+		};
+		3FC4E56427F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlcatchexception::CwlCatchExceptionSupport";
+			remoteInfo = CwlCatchExceptionSupport;
+		};
+		3FC4E56527F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlpreconditiontesting::CwlMachBadInstructionHandler";
+			remoteInfo = CwlMachBadInstructionHandler;
+		};
+		3FC4E56627F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlpreconditiontesting::CwlPosixPreconditionTesting";
+			remoteInfo = CwlPosixPreconditionTesting;
+		};
+		3FC4E56727F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlpreconditiontesting::CwlPreconditionTesting";
+			remoteInfo = CwlPreconditionTesting;
+		};
+		3FC4E56827F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlcatchexception::CwlCatchException";
+			remoteInfo = CwlCatchException;
+		};
+		3FC4E56927F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlcatchexception::CwlCatchExceptionSupport";
+			remoteInfo = CwlCatchExceptionSupport;
+		};
+		3FC4E56A27F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlpreconditiontesting::CwlMachBadInstructionHandler";
+			remoteInfo = CwlMachBadInstructionHandler;
+		};
+		3FC4E56B27F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "quick::Quick";
+			remoteInfo = Quick;
+		};
+		3FC4E56C27F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "quick::QuickObjCRuntime";
+			remoteInfo = QuickObjCRuntime;
+		};
+		3FC4E56D27F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "quick::QuickObjCRuntime";
+			remoteInfo = QuickObjCRuntime;
+		};
+		3FC4E56E27F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swiftysimplekeychain::SwiftySimpleKeychain";
+			remoteInfo = SwiftySimpleKeychain;
+		};
+		3FC4E56F27F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "nimble::Nimble";
+			remoteInfo = Nimble;
+		};
+		3FC4E57027F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlpreconditiontesting::CwlPosixPreconditionTesting";
+			remoteInfo = CwlPosixPreconditionTesting;
+		};
+		3FC4E57127F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlpreconditiontesting::CwlPreconditionTesting";
+			remoteInfo = CwlPreconditionTesting;
+		};
+		3FC4E57227F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlcatchexception::CwlCatchException";
+			remoteInfo = CwlCatchException;
+		};
+		3FC4E57327F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlcatchexception::CwlCatchExceptionSupport";
+			remoteInfo = CwlCatchExceptionSupport;
+		};
+		3FC4E57427F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "cwlpreconditiontesting::CwlMachBadInstructionHandler";
+			remoteInfo = CwlMachBadInstructionHandler;
+		};
+		3FC4E57527F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "quick::Quick";
+			remoteInfo = Quick;
+		};
+		3FC4E57627F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "quick::QuickObjCRuntime";
+			remoteInfo = QuickObjCRuntime;
+		};
+		3FC4E57727F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swiftysimplekeychain::SwiftySimpleKeychain_RSAHelper";
+			remoteInfo = SwiftySimpleKeychain_RSAHelper;
+		};
+		3FC4E57827F4B35000625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swiftysimplekeychain::SwiftySimpleKeychain";
+			remoteInfo = SwiftySimpleKeychain;
+		};
+		3FC4E58B27F4B36D00625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swiftysimplekeychain::SwiftySimpleKeychain_RSAHelperTests";
+			remoteInfo = SwiftySimpleKeychain_RSAHelperTests;
+		};
+		3FC4E58C27F4B36D00625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swiftysimplekeychain::SwiftySimpleKeychainTests";
+			remoteInfo = SwiftySimpleKeychainTests;
+		};
+		3FC4E58D27F4B37200625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC4E57C27F4B36C00625F2E;
+			remoteInfo = iOSTestHostApp;
+		};
+		3FC4E58F27F4B37600625F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC4E57C27F4B36C00625F2E;
+			remoteInfo = iOSTestHostApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FC4E57D27F4B36C00625F2E /* iOSTestHostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTestHostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC4E57F27F4B36C00625F2E /* iOSTestHostAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestHostAppApp.swift; sourceTree = "<group>"; };
+		3FC4E58127F4B36C00625F2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FC4E58327F4B36C00625F2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FC4E58627F4B36C00625F2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		OBJ_100 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/kimi/Works/eaceto.dev/oss/iOS/SwiftySimpleKeychain/.build/checkouts/Nimble/Package.swift; sourceTree = "<group>"; };
+		OBJ_103 /* CwlMachBadInstructionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CwlMachBadInstructionHandler.m; sourceTree = "<group>"; };
+		OBJ_104 /* mach_excServer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mach_excServer.c; sourceTree = "<group>"; };
+		OBJ_106 /* CwlMachBadInstructionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CwlMachBadInstructionHandler.h; sourceTree = "<group>"; };
+		OBJ_108 /* CwlCatchBadInstructionPosix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CwlCatchBadInstructionPosix.swift; sourceTree = "<group>"; };
+		OBJ_11 /* SwiftySimpleKeychain+Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftySimpleKeychain+Delete.swift"; sourceTree = "<group>"; };
+		OBJ_110 /* CwlBadInstructionException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CwlBadInstructionException.swift; sourceTree = "<group>"; };
+		OBJ_111 /* CwlCatchBadInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CwlCatchBadInstruction.swift; sourceTree = "<group>"; };
+		OBJ_112 /* CwlDarwinDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CwlDarwinDefinitions.swift; sourceTree = "<group>"; };
+		OBJ_113 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/kimi/Works/eaceto.dev/oss/iOS/SwiftySimpleKeychain/.build/checkouts/CwlPreconditionTesting/Package.swift; sourceTree = "<group>"; };
+		OBJ_116 /* CwlCatchException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CwlCatchException.swift; sourceTree = "<group>"; };
+		OBJ_118 /* CwlCatchException.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CwlCatchException.m; sourceTree = "<group>"; };
+		OBJ_12 /* SwiftySimpleKeychain+Get.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftySimpleKeychain+Get.swift"; sourceTree = "<group>"; };
+		OBJ_120 /* CwlCatchException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CwlCatchException.h; sourceTree = "<group>"; };
+		OBJ_121 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/kimi/Works/eaceto.dev/oss/iOS/SwiftySimpleKeychain/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport/module.modulemap; sourceTree = "<group>"; };
+		OBJ_122 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/kimi/Works/eaceto.dev/oss/iOS/SwiftySimpleKeychain/.build/checkouts/CwlCatchException/Package.swift; sourceTree = "<group>"; };
+		OBJ_125 /* Behavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
+		OBJ_126 /* Callsite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callsite.swift; sourceTree = "<group>"; };
+		OBJ_128 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		OBJ_129 /* QuickConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_13 /* SwiftySimpleKeychain+Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftySimpleKeychain+Set.swift"; sourceTree = "<group>"; };
+		OBJ_131 /* DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSL.swift; sourceTree = "<group>"; };
+		OBJ_132 /* World+DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "World+DSL.swift"; sourceTree = "<group>"; };
+		OBJ_133 /* ErrorUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorUtility.swift; sourceTree = "<group>"; };
+		OBJ_134 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		OBJ_135 /* ExampleGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleGroup.swift; sourceTree = "<group>"; };
+		OBJ_136 /* ExampleMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleMetadata.swift; sourceTree = "<group>"; };
+		OBJ_137 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		OBJ_139 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		OBJ_140 /* ExampleHooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleHooks.swift; sourceTree = "<group>"; };
+		OBJ_141 /* HooksPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HooksPhase.swift; sourceTree = "<group>"; };
+		OBJ_142 /* SuiteHooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuiteHooks.swift; sourceTree = "<group>"; };
+		OBJ_143 /* NSBundle+CurrentTestBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBundle+CurrentTestBundle.swift"; sourceTree = "<group>"; };
+		OBJ_144 /* QuickMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMain.swift; sourceTree = "<group>"; };
+		OBJ_145 /* QuickSelectedTestSuiteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSelectedTestSuiteBuilder.swift; sourceTree = "<group>"; };
+		OBJ_146 /* QuickSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSpec.swift; sourceTree = "<group>"; };
+		OBJ_147 /* QuickTestObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTestObservation.swift; sourceTree = "<group>"; };
+		OBJ_148 /* QuickTestSuite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTestSuite.swift; sourceTree = "<group>"; };
+		OBJ_149 /* String+C99ExtendedIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+C99ExtendedIdentifier.swift"; sourceTree = "<group>"; };
+		OBJ_15 /* SwiftySimpleKeychain+BaseQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftySimpleKeychain+BaseQuery.swift"; sourceTree = "<group>"; };
+		OBJ_150 /* URL+FileName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+FileName.swift"; sourceTree = "<group>"; };
+		OBJ_151 /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		OBJ_153 /* QuickSpecBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSpecBase.m; sourceTree = "<group>"; };
+		OBJ_155 /* QuickSpecBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSpecBase.h; sourceTree = "<group>"; };
+		OBJ_156 /* QuickObjCRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickObjCRuntime.h; sourceTree = "<group>"; };
+		OBJ_157 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/kimi/Works/eaceto.dev/oss/iOS/SwiftySimpleKeychain/.build/checkouts/Quick/Package.swift; sourceTree = "<group>"; };
+		OBJ_16 /* SwiftySimpleKeychain+FindQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftySimpleKeychain+FindQuery.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* SwiftySimpleKeychain+NewQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftySimpleKeychain+NewQuery.swift"; sourceTree = "<group>"; };
+		OBJ_171 /* Development */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Development; sourceTree = SOURCE_ROOT; };
+		OBJ_172 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = SOURCE_ROOT; };
+		OBJ_173 /* sonar-reports */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "sonar-reports"; sourceTree = SOURCE_ROOT; };
+		OBJ_174 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = SOURCE_ROOT; };
+		OBJ_175 /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = build; sourceTree = SOURCE_ROOT; };
+		OBJ_176 /* DerivedData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DerivedData; sourceTree = SOURCE_ROOT; };
+		OBJ_177 /* SwiftySimpleKeychain.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftySimpleKeychain.podspec; sourceTree = "<group>"; };
+		OBJ_178 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_179 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		OBJ_18 /* SwiftySimpleKeychain+UpdateQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftySimpleKeychain+UpdateQuery.swift"; sourceTree = "<group>"; };
+		OBJ_180 /* Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Debug.entitlements; sourceTree = "<group>"; };
+		OBJ_181 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_182 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		OBJ_183 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		OBJ_19 /* SwiftySimpleKeychainError+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftySimpleKeychainError+Init.swift"; sourceTree = "<group>"; };
+		OBJ_21 /* DataErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataErrorResult.swift; sourceTree = "<group>"; };
+		OBJ_22 /* StringErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringErrorResult.swift; sourceTree = "<group>"; };
+		OBJ_23 /* VoidErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidErrorResult.swift; sourceTree = "<group>"; };
+		OBJ_24 /* SwiftySimpleKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySimpleKeychain.swift; sourceTree = "<group>"; };
+		OBJ_25 /* SwiftySimpleKeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySimpleKeychainError.swift; sourceTree = "<group>"; };
+		OBJ_26 /* SwiftySimpleKeychainItemAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySimpleKeychainItemAccessible.swift; sourceTree = "<group>"; };
+		OBJ_29 /* SwiftySimpleKeychain+RSAHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftySimpleKeychain+RSAHelper.swift"; sourceTree = "<group>"; };
+		OBJ_30 /* SwiftySimpleKeychainError+RSAHelperInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftySimpleKeychainError+RSAHelperInit.swift"; sourceTree = "<group>"; };
+		OBJ_32 /* SecKeyErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecKeyErrorResult.swift; sourceTree = "<group>"; };
+		OBJ_33 /* SwiftySimpleKeychainRSAKeySize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySimpleKeychainRSAKeySize.swift; sourceTree = "<group>"; };
+		OBJ_36 /* SwiftySimpleKeychainSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySimpleKeychainSpec.swift; sourceTree = "<group>"; };
+		OBJ_38 /* SwiftySimpleKeychain_RSAHelperSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySimpleKeychain_RSAHelperSpec.swift; sourceTree = "<group>"; };
+		OBJ_43 /* AdapterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterProtocols.swift; sourceTree = "<group>"; };
+		OBJ_44 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionDispatcher.swift; sourceTree = "<group>"; };
+		OBJ_45 /* AssertionRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionRecorder.swift; sourceTree = "<group>"; };
+		OBJ_46 /* NMBExpectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMBExpectation.swift; sourceTree = "<group>"; };
+		OBJ_47 /* NimbleEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleEnvironment.swift; sourceTree = "<group>"; };
+		OBJ_48 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleXCTestHandler.swift; sourceTree = "<group>"; };
+		OBJ_50 /* ExceptionCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionCapture.swift; sourceTree = "<group>"; };
+		OBJ_51 /* DSL+Wait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSL+Wait.swift"; sourceTree = "<group>"; };
+		OBJ_52 /* DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSL.swift; sourceTree = "<group>"; };
+		OBJ_53 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
+		OBJ_54 /* ExpectationMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpectationMessage.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		OBJ_56 /* FailureMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureMessage.swift; sourceTree = "<group>"; };
+		OBJ_58 /* AllPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPass.swift; sourceTree = "<group>"; };
+		OBJ_59 /* Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* BeAKindOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeAKindOf.swift; sourceTree = "<group>"; };
+		OBJ_61 /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeAnInstanceOf.swift; sourceTree = "<group>"; };
+		OBJ_62 /* BeCloseTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeCloseTo.swift; sourceTree = "<group>"; };
+		OBJ_63 /* BeEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeEmpty.swift; sourceTree = "<group>"; };
+		OBJ_64 /* BeGreaterThan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeGreaterThan.swift; sourceTree = "<group>"; };
+		OBJ_65 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
+		OBJ_66 /* BeIdenticalTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeIdenticalTo.swift; sourceTree = "<group>"; };
+		OBJ_67 /* BeLessThan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeLessThan.swift; sourceTree = "<group>"; };
+		OBJ_68 /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeLessThanOrEqual.swift; sourceTree = "<group>"; };
+		OBJ_69 /* BeLogical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeLogical.swift; sourceTree = "<group>"; };
+		OBJ_70 /* BeNil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeNil.swift; sourceTree = "<group>"; };
+		OBJ_71 /* BeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeResult.swift; sourceTree = "<group>"; };
+		OBJ_72 /* BeVoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeVoid.swift; sourceTree = "<group>"; };
+		OBJ_73 /* BeWithin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeWithin.swift; sourceTree = "<group>"; };
+		OBJ_74 /* BeginWith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginWith.swift; sourceTree = "<group>"; };
+		OBJ_75 /* BeginWithPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginWithPrefix.swift; sourceTree = "<group>"; };
+		OBJ_76 /* Contain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contain.swift; sourceTree = "<group>"; };
+		OBJ_77 /* ContainElementSatisfying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainElementSatisfying.swift; sourceTree = "<group>"; };
+		OBJ_78 /* ElementsEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsEqual.swift; sourceTree = "<group>"; };
+		OBJ_79 /* EndWith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndWith.swift; sourceTree = "<group>"; };
+		OBJ_80 /* Equal+Tuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Equal+Tuple.swift"; sourceTree = "<group>"; };
+		OBJ_81 /* Equal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equal.swift; sourceTree = "<group>"; };
+		OBJ_82 /* HaveCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveCount.swift; sourceTree = "<group>"; };
+		OBJ_83 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		OBJ_84 /* MatchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchError.swift; sourceTree = "<group>"; };
+		OBJ_85 /* MatcherProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcherProtocols.swift; sourceTree = "<group>"; };
+		OBJ_86 /* PostNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNotification.swift; sourceTree = "<group>"; };
+		OBJ_87 /* Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predicate.swift; sourceTree = "<group>"; };
+		OBJ_88 /* RaisesException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisesException.swift; sourceTree = "<group>"; };
+		OBJ_89 /* SatisfyAllOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatisfyAllOf.swift; sourceTree = "<group>"; };
+		OBJ_90 /* SatisfyAnyOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatisfyAnyOf.swift; sourceTree = "<group>"; };
+		OBJ_91 /* ThrowAssertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowAssertion.swift; sourceTree = "<group>"; };
+		OBJ_92 /* ThrowError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowError.swift; sourceTree = "<group>"; };
+		OBJ_93 /* ToSucceed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToSucceed.swift; sourceTree = "<group>"; };
+		OBJ_95 /* Await.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Await.swift; sourceTree = "<group>"; };
+		OBJ_96 /* DispatchTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchTimeInterval.swift; sourceTree = "<group>"; };
+		OBJ_97 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		OBJ_98 /* SourceLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLocation.swift; sourceTree = "<group>"; };
+		OBJ_99 /* Stringers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stringers.swift; sourceTree = "<group>"; };
+		"cwlcatchexception::CwlCatchException::Product" /* CwlCatchException.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CwlCatchException.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"cwlcatchexception::CwlCatchExceptionSupport::Product" /* CwlCatchExceptionSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CwlCatchExceptionSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"cwlpreconditiontesting::CwlMachBadInstructionHandler::Product" /* CwlMachBadInstructionHandler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CwlMachBadInstructionHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"cwlpreconditiontesting::CwlPosixPreconditionTesting::Product" /* CwlPosixPreconditionTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CwlPosixPreconditionTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"cwlpreconditiontesting::CwlPreconditionTesting::Product" /* CwlPreconditionTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CwlPreconditionTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"nimble::Nimble::Product" /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"quick::Quick::Product" /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"quick::QuickObjCRuntime::Product" /* QuickObjCRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuickObjCRuntime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swiftysimplekeychain::SwiftySimpleKeychain::Product" /* SwiftySimpleKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftySimpleKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swiftysimplekeychain::SwiftySimpleKeychainTests::Product" /* SwiftySimpleKeychainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwiftySimpleKeychainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swiftysimplekeychain::SwiftySimpleKeychain_RSAHelper::Product" /* SwiftySimpleKeychain_RSAHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftySimpleKeychain_RSAHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swiftysimplekeychain::SwiftySimpleKeychain_RSAHelperTests::Product" /* SwiftySimpleKeychain_RSAHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwiftySimpleKeychain_RSAHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FC4E57A27F4B36C00625F2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_191 /* CwlCatchExceptionSupport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_232 /* CwlCatchException.framework in Frameworks */,
+				OBJ_233 /* CwlCatchExceptionSupport.framework in Frameworks */,
+				OBJ_234 /* CwlMachBadInstructionHandler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_304 /* CwlPosixPreconditionTesting.framework in Frameworks */,
+				OBJ_305 /* CwlPreconditionTesting.framework in Frameworks */,
+				OBJ_306 /* CwlCatchException.framework in Frameworks */,
+				OBJ_307 /* CwlCatchExceptionSupport.framework in Frameworks */,
+				OBJ_308 /* CwlMachBadInstructionHandler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_350 /* QuickObjCRuntime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_408 /* Nimble.framework in Frameworks */,
+				OBJ_409 /* CwlPosixPreconditionTesting.framework in Frameworks */,
+				OBJ_410 /* CwlPreconditionTesting.framework in Frameworks */,
+				OBJ_411 /* CwlCatchException.framework in Frameworks */,
+				OBJ_412 /* CwlCatchExceptionSupport.framework in Frameworks */,
+				OBJ_413 /* CwlMachBadInstructionHandler.framework in Frameworks */,
+				OBJ_414 /* Quick.framework in Frameworks */,
+				OBJ_415 /* QuickObjCRuntime.framework in Frameworks */,
+				OBJ_416 /* SwiftySimpleKeychain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_436 /* SwiftySimpleKeychain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_444 /* Nimble.framework in Frameworks */,
+				OBJ_445 /* CwlPosixPreconditionTesting.framework in Frameworks */,
+				OBJ_446 /* CwlPreconditionTesting.framework in Frameworks */,
+				OBJ_447 /* CwlCatchException.framework in Frameworks */,
+				OBJ_448 /* CwlCatchExceptionSupport.framework in Frameworks */,
+				OBJ_449 /* CwlMachBadInstructionHandler.framework in Frameworks */,
+				OBJ_450 /* Quick.framework in Frameworks */,
+				OBJ_451 /* QuickObjCRuntime.framework in Frameworks */,
+				OBJ_452 /* SwiftySimpleKeychain_RSAHelper.framework in Frameworks */,
+				OBJ_453 /* SwiftySimpleKeychain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FC4E57E27F4B36C00625F2E /* iOSTestHostApp */ = {
+			isa = PBXGroup;
+			children = (
+				3FC4E57F27F4B36C00625F2E /* iOSTestHostAppApp.swift */,
+				3FC4E58127F4B36C00625F2E /* ContentView.swift */,
+				3FC4E58327F4B36C00625F2E /* Assets.xcassets */,
+				3FC4E58527F4B36C00625F2E /* Preview Content */,
+			);
+			path = iOSTestHostApp;
+			sourceTree = "<group>";
+		};
+		3FC4E58527F4B36C00625F2E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3FC4E58627F4B36C00625F2E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* KeychainOps */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* SwiftySimpleKeychain+Delete.swift */,
+				OBJ_12 /* SwiftySimpleKeychain+Get.swift */,
+				OBJ_13 /* SwiftySimpleKeychain+Set.swift */,
+			);
+			path = KeychainOps;
+			sourceTree = "<group>";
+		};
+		OBJ_101 /* CwlPreconditionTesting 2.1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_102 /* CwlMachBadInstructionHandler */,
+				OBJ_107 /* CwlPosixPreconditionTesting */,
+				OBJ_109 /* CwlPreconditionTesting */,
+				OBJ_113 /* Package.swift */,
+			);
+			name = "CwlPreconditionTesting 2.1.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_102 /* CwlMachBadInstructionHandler */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_103 /* CwlMachBadInstructionHandler.m */,
+				OBJ_104 /* mach_excServer.c */,
+				OBJ_105 /* include */,
+			);
+			name = CwlMachBadInstructionHandler;
+			path = .build/checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_105 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_106 /* CwlMachBadInstructionHandler.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_107 /* CwlPosixPreconditionTesting */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_108 /* CwlCatchBadInstructionPosix.swift */,
+			);
+			name = CwlPosixPreconditionTesting;
+			path = .build/checkouts/CwlPreconditionTesting/Sources/CwlPosixPreconditionTesting;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_109 /* CwlPreconditionTesting */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_110 /* CwlBadInstructionException.swift */,
+				OBJ_111 /* CwlCatchBadInstruction.swift */,
+				OBJ_112 /* CwlDarwinDefinitions.swift */,
+			);
+			name = CwlPreconditionTesting;
+			path = .build/checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_114 /* CwlCatchException 2.1.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_115 /* CwlCatchException */,
+				OBJ_117 /* CwlCatchExceptionSupport */,
+				OBJ_122 /* Package.swift */,
+			);
+			name = "CwlCatchException 2.1.1";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_115 /* CwlCatchException */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_116 /* CwlCatchException.swift */,
+			);
+			name = CwlCatchException;
+			path = .build/checkouts/CwlCatchException/Sources/CwlCatchException;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_117 /* CwlCatchExceptionSupport */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_118 /* CwlCatchException.m */,
+				OBJ_119 /* include */,
+			);
+			name = CwlCatchExceptionSupport;
+			path = .build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_119 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_120 /* CwlCatchException.h */,
+				OBJ_121 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_123 /* Quick 4.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_124 /* Quick */,
+				OBJ_152 /* QuickObjCRuntime */,
+				OBJ_157 /* Package.swift */,
+			);
+			name = "Quick 4.0.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_124 /* Quick */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_125 /* Behavior.swift */,
+				OBJ_126 /* Callsite.swift */,
+				OBJ_127 /* Configuration */,
+				OBJ_130 /* DSL */,
+				OBJ_133 /* ErrorUtility.swift */,
+				OBJ_134 /* Example.swift */,
+				OBJ_135 /* ExampleGroup.swift */,
+				OBJ_136 /* ExampleMetadata.swift */,
+				OBJ_137 /* Filter.swift */,
+				OBJ_138 /* Hooks */,
+				OBJ_143 /* NSBundle+CurrentTestBundle.swift */,
+				OBJ_144 /* QuickMain.swift */,
+				OBJ_145 /* QuickSelectedTestSuiteBuilder.swift */,
+				OBJ_146 /* QuickSpec.swift */,
+				OBJ_147 /* QuickTestObservation.swift */,
+				OBJ_148 /* QuickTestSuite.swift */,
+				OBJ_149 /* String+C99ExtendedIdentifier.swift */,
+				OBJ_150 /* URL+FileName.swift */,
+				OBJ_151 /* World.swift */,
+			);
+			name = Quick;
+			path = .build/checkouts/Quick/Sources/Quick;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_127 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_128 /* Configuration.swift */,
+				OBJ_129 /* QuickConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		OBJ_130 /* DSL */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_131 /* DSL.swift */,
+				OBJ_132 /* World+DSL.swift */,
+			);
+			path = DSL;
+			sourceTree = "<group>";
+		};
+		OBJ_138 /* Hooks */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_139 /* Closures.swift */,
+				OBJ_140 /* ExampleHooks.swift */,
+				OBJ_141 /* HooksPhase.swift */,
+				OBJ_142 /* SuiteHooks.swift */,
+			);
+			path = Hooks;
+			sourceTree = "<group>";
+		};
+		OBJ_14 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* SwiftySimpleKeychain+BaseQuery.swift */,
+				OBJ_16 /* SwiftySimpleKeychain+FindQuery.swift */,
+				OBJ_17 /* SwiftySimpleKeychain+NewQuery.swift */,
+				OBJ_18 /* SwiftySimpleKeychain+UpdateQuery.swift */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		OBJ_152 /* QuickObjCRuntime */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_153 /* QuickSpecBase.m */,
+				OBJ_154 /* include */,
+			);
+			name = QuickObjCRuntime;
+			path = .build/checkouts/Quick/Sources/QuickObjCRuntime;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_154 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_155 /* QuickSpecBase.h */,
+				OBJ_156 /* QuickObjCRuntime.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_158 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"cwlcatchexception::CwlCatchException::Product" /* CwlCatchException.framework */,
+				"cwlcatchexception::CwlCatchExceptionSupport::Product" /* CwlCatchExceptionSupport.framework */,
+				"cwlpreconditiontesting::CwlMachBadInstructionHandler::Product" /* CwlMachBadInstructionHandler.framework */,
+				"cwlpreconditiontesting::CwlPosixPreconditionTesting::Product" /* CwlPosixPreconditionTesting.framework */,
+				"cwlpreconditiontesting::CwlPreconditionTesting::Product" /* CwlPreconditionTesting.framework */,
+				"nimble::Nimble::Product" /* Nimble.framework */,
+				"quick::Quick::Product" /* Quick.framework */,
+				"quick::QuickObjCRuntime::Product" /* QuickObjCRuntime.framework */,
+				"swiftysimplekeychain::SwiftySimpleKeychain::Product" /* SwiftySimpleKeychain.framework */,
+				"swiftysimplekeychain::SwiftySimpleKeychainTests::Product" /* SwiftySimpleKeychainTests.xctest */,
+				"swiftysimplekeychain::SwiftySimpleKeychain_RSAHelper::Product" /* SwiftySimpleKeychain_RSAHelper.framework */,
+				"swiftysimplekeychain::SwiftySimpleKeychain_RSAHelperTests::Product" /* SwiftySimpleKeychain_RSAHelperTests.xctest */,
+				3FC4E57D27F4B36C00625F2E /* iOSTestHostApp.app */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_20 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* DataErrorResult.swift */,
+				OBJ_22 /* StringErrorResult.swift */,
+				OBJ_23 /* VoidErrorResult.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		OBJ_27 /* SwiftySimpleKeychain_RSAHelper */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_28 /* Extensions */,
+				OBJ_31 /* Results */,
+				OBJ_33 /* SwiftySimpleKeychainRSAKeySize.swift */,
+			);
+			name = SwiftySimpleKeychain_RSAHelper;
+			path = Sources/SwiftySimpleKeychain_RSAHelper;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_28 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_29 /* SwiftySimpleKeychain+RSAHelper.swift */,
+				OBJ_30 /* SwiftySimpleKeychainError+RSAHelperInit.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_31 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_32 /* SecKeyErrorResult.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* SwiftySimpleKeychainTests */,
+				OBJ_37 /* SwiftySimpleKeychain_RSAHelperTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_35 /* SwiftySimpleKeychainTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* SwiftySimpleKeychainSpec.swift */,
+			);
+			name = SwiftySimpleKeychainTests;
+			path = Tests/SwiftySimpleKeychainTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_37 /* SwiftySimpleKeychain_RSAHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_38 /* SwiftySimpleKeychain_RSAHelperSpec.swift */,
+			);
+			name = SwiftySimpleKeychain_RSAHelperTests;
+			path = Tests/SwiftySimpleKeychain_RSAHelperTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_39 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_40 /* Nimble */,
+				OBJ_101 /* CwlPreconditionTesting 2.1.0 */,
+				OBJ_114 /* CwlCatchException 2.1.1 */,
+				OBJ_123 /* Quick 4.0.0 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_40 /* Nimble */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_41 /* Nimble */,
+				OBJ_100 /* Package.swift */,
+			);
+			name = Nimble;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_41 /* Nimble */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_42 /* Adapters */,
+				OBJ_51 /* DSL+Wait.swift */,
+				OBJ_52 /* DSL.swift */,
+				OBJ_53 /* Expectation.swift */,
+				OBJ_54 /* ExpectationMessage.swift */,
+				OBJ_55 /* Expression.swift */,
+				OBJ_56 /* FailureMessage.swift */,
+				OBJ_57 /* Matchers */,
+				OBJ_94 /* Utils */,
+			);
+			name = Nimble;
+			path = .build/checkouts/Nimble/Sources/Nimble;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_42 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_43 /* AdapterProtocols.swift */,
+				OBJ_44 /* AssertionDispatcher.swift */,
+				OBJ_45 /* AssertionRecorder.swift */,
+				OBJ_46 /* NMBExpectation.swift */,
+				OBJ_47 /* NimbleEnvironment.swift */,
+				OBJ_48 /* NimbleXCTestHandler.swift */,
+				OBJ_49 /* NonObjectiveC */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		OBJ_49 /* NonObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_50 /* ExceptionCapture.swift */,
+			);
+			path = NonObjectiveC;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_34 /* Tests */,
+				OBJ_39 /* Dependencies */,
+				3FC4E57E27F4B36C00625F2E /* iOSTestHostApp */,
+				OBJ_158 /* Products */,
+				OBJ_171 /* Development */,
+				OBJ_172 /* docs */,
+				OBJ_173 /* sonar-reports */,
+				OBJ_174 /* fastlane */,
+				OBJ_175 /* build */,
+				OBJ_176 /* DerivedData */,
+				OBJ_177 /* SwiftySimpleKeychain.podspec */,
+				OBJ_178 /* LICENSE */,
+				OBJ_179 /* CHANGELOG.md */,
+				OBJ_180 /* Debug.entitlements */,
+				OBJ_181 /* README.md */,
+				OBJ_182 /* Gemfile */,
+				OBJ_183 /* Gemfile.lock */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_57 /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_58 /* AllPass.swift */,
+				OBJ_59 /* Async.swift */,
+				OBJ_60 /* BeAKindOf.swift */,
+				OBJ_61 /* BeAnInstanceOf.swift */,
+				OBJ_62 /* BeCloseTo.swift */,
+				OBJ_63 /* BeEmpty.swift */,
+				OBJ_64 /* BeGreaterThan.swift */,
+				OBJ_65 /* BeGreaterThanOrEqualTo.swift */,
+				OBJ_66 /* BeIdenticalTo.swift */,
+				OBJ_67 /* BeLessThan.swift */,
+				OBJ_68 /* BeLessThanOrEqual.swift */,
+				OBJ_69 /* BeLogical.swift */,
+				OBJ_70 /* BeNil.swift */,
+				OBJ_71 /* BeResult.swift */,
+				OBJ_72 /* BeVoid.swift */,
+				OBJ_73 /* BeWithin.swift */,
+				OBJ_74 /* BeginWith.swift */,
+				OBJ_75 /* BeginWithPrefix.swift */,
+				OBJ_76 /* Contain.swift */,
+				OBJ_77 /* ContainElementSatisfying.swift */,
+				OBJ_78 /* ElementsEqual.swift */,
+				OBJ_79 /* EndWith.swift */,
+				OBJ_80 /* Equal+Tuple.swift */,
+				OBJ_81 /* Equal.swift */,
+				OBJ_82 /* HaveCount.swift */,
+				OBJ_83 /* Match.swift */,
+				OBJ_84 /* MatchError.swift */,
+				OBJ_85 /* MatcherProtocols.swift */,
+				OBJ_86 /* PostNotification.swift */,
+				OBJ_87 /* Predicate.swift */,
+				OBJ_88 /* RaisesException.swift */,
+				OBJ_89 /* SatisfyAllOf.swift */,
+				OBJ_90 /* SatisfyAnyOf.swift */,
+				OBJ_91 /* ThrowAssertion.swift */,
+				OBJ_92 /* ThrowError.swift */,
+				OBJ_93 /* ToSucceed.swift */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* SwiftySimpleKeychain */,
+				OBJ_27 /* SwiftySimpleKeychain_RSAHelper */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* SwiftySimpleKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Extensions */,
+				OBJ_20 /* Results */,
+				OBJ_24 /* SwiftySimpleKeychain.swift */,
+				OBJ_25 /* SwiftySimpleKeychainError.swift */,
+				OBJ_26 /* SwiftySimpleKeychainItemAccessible.swift */,
+			);
+			name = SwiftySimpleKeychain;
+			path = Sources/SwiftySimpleKeychain;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* KeychainOps */,
+				OBJ_14 /* Queries */,
+				OBJ_19 /* SwiftySimpleKeychainError+Init.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_94 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_95 /* Await.swift */,
+				OBJ_96 /* DispatchTimeInterval.swift */,
+				OBJ_97 /* Errors.swift */,
+				OBJ_98 /* SourceLocation.swift */,
+				OBJ_99 /* Stringers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		OBJ_213 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_214 /* CwlMachBadInstructionHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_358 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_359 /* QuickSpecBase.h in Headers */,
+				OBJ_360 /* QuickObjCRuntime.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3FC4E57C27F4B36C00625F2E /* iOSTestHostApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC4E58A27F4B36C00625F2E /* Build configuration list for PBXNativeTarget "iOSTestHostApp" */;
+			buildPhases = (
+				3FC4E57927F4B36C00625F2E /* Sources */,
+				3FC4E57A27F4B36C00625F2E /* Frameworks */,
+				3FC4E57B27F4B36C00625F2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSTestHostApp;
+			productName = iOSTestHostApp;
+			productReference = 3FC4E57D27F4B36C00625F2E /* iOSTestHostApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		"cwlcatchexception::CwlCatchException" /* CwlCatchException */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_185 /* Build configuration list for PBXNativeTarget "CwlCatchException" */;
+			buildPhases = (
+				OBJ_188 /* Sources */,
+				OBJ_190 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_192 /* PBXTargetDependency */,
+			);
+			name = CwlCatchException;
+			productName = CwlCatchException;
+			productReference = "cwlcatchexception::CwlCatchException::Product" /* CwlCatchException.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"cwlcatchexception::CwlCatchExceptionSupport" /* CwlCatchExceptionSupport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_200 /* Build configuration list for PBXNativeTarget "CwlCatchExceptionSupport" */;
+			buildPhases = (
+				OBJ_203 /* Sources */,
+				OBJ_205 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CwlCatchExceptionSupport;
+			productName = CwlCatchExceptionSupport;
+			productReference = "cwlcatchexception::CwlCatchExceptionSupport::Product" /* CwlCatchExceptionSupport.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"cwlcatchexception::SwiftPMPackageDescription" /* CwlCatchExceptionPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_195 /* Build configuration list for PBXNativeTarget "CwlCatchExceptionPackageDescription" */;
+			buildPhases = (
+				OBJ_198 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CwlCatchExceptionPackageDescription;
+			productName = CwlCatchExceptionPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"cwlpreconditiontesting::CwlMachBadInstructionHandler" /* CwlMachBadInstructionHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_207 /* Build configuration list for PBXNativeTarget "CwlMachBadInstructionHandler" */;
+			buildPhases = (
+				OBJ_210 /* Sources */,
+				OBJ_213 /* Headers */,
+				OBJ_215 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CwlMachBadInstructionHandler;
+			productName = CwlMachBadInstructionHandler;
+			productReference = "cwlpreconditiontesting::CwlMachBadInstructionHandler::Product" /* CwlMachBadInstructionHandler.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"cwlpreconditiontesting::CwlPosixPreconditionTesting" /* CwlPosixPreconditionTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_217 /* Build configuration list for PBXNativeTarget "CwlPosixPreconditionTesting" */;
+			buildPhases = (
+				OBJ_220 /* Sources */,
+				OBJ_222 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CwlPosixPreconditionTesting;
+			productName = CwlPosixPreconditionTesting;
+			productReference = "cwlpreconditiontesting::CwlPosixPreconditionTesting::Product" /* CwlPosixPreconditionTesting.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"cwlpreconditiontesting::CwlPreconditionTesting" /* CwlPreconditionTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_224 /* Build configuration list for PBXNativeTarget "CwlPreconditionTesting" */;
+			buildPhases = (
+				OBJ_227 /* Sources */,
+				OBJ_231 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_235 /* PBXTargetDependency */,
+				OBJ_236 /* PBXTargetDependency */,
+				OBJ_237 /* PBXTargetDependency */,
+			);
+			name = CwlPreconditionTesting;
+			productName = CwlPreconditionTesting;
+			productReference = "cwlpreconditiontesting::CwlPreconditionTesting::Product" /* CwlPreconditionTesting.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"cwlpreconditiontesting::SwiftPMPackageDescription" /* CwlPreconditionTestingPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_239 /* Build configuration list for PBXNativeTarget "CwlPreconditionTestingPackageDescription" */;
+			buildPhases = (
+				OBJ_242 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CwlPreconditionTestingPackageDescription;
+			productName = CwlPreconditionTestingPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"nimble::Nimble" /* Nimble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_245 /* Build configuration list for PBXNativeTarget "Nimble" */;
+			buildPhases = (
+				OBJ_248 /* Sources */,
+				OBJ_303 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_309 /* PBXTargetDependency */,
+				OBJ_310 /* PBXTargetDependency */,
+				OBJ_311 /* PBXTargetDependency */,
+				OBJ_312 /* PBXTargetDependency */,
+				OBJ_313 /* PBXTargetDependency */,
+			);
+			name = Nimble;
+			productName = Nimble;
+			productReference = "nimble::Nimble::Product" /* Nimble.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"nimble::SwiftPMPackageDescription" /* NimblePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_315 /* Build configuration list for PBXNativeTarget "NimblePackageDescription" */;
+			buildPhases = (
+				OBJ_318 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NimblePackageDescription;
+			productName = NimblePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"quick::Quick" /* Quick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_321 /* Build configuration list for PBXNativeTarget "Quick" */;
+			buildPhases = (
+				OBJ_324 /* Sources */,
+				OBJ_349 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_351 /* PBXTargetDependency */,
+			);
+			name = Quick;
+			productName = Quick;
+			productReference = "quick::Quick::Product" /* Quick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"quick::QuickObjCRuntime" /* QuickObjCRuntime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_353 /* Build configuration list for PBXNativeTarget "QuickObjCRuntime" */;
+			buildPhases = (
+				OBJ_356 /* Sources */,
+				OBJ_358 /* Headers */,
+				OBJ_361 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickObjCRuntime;
+			productName = QuickObjCRuntime;
+			productReference = "quick::QuickObjCRuntime::Product" /* QuickObjCRuntime.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"quick::SwiftPMPackageDescription" /* QuickPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_363 /* Build configuration list for PBXNativeTarget "QuickPackageDescription" */;
+			buildPhases = (
+				OBJ_366 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickPackageDescription;
+			productName = QuickPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"swiftysimplekeychain::SwiftPMPackageDescription" /* SwiftySimpleKeychainPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_389 /* Build configuration list for PBXNativeTarget "SwiftySimpleKeychainPackageDescription" */;
+			buildPhases = (
+				OBJ_392 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftySimpleKeychainPackageDescription;
+			productName = SwiftySimpleKeychainPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"swiftysimplekeychain::SwiftySimpleKeychain" /* SwiftySimpleKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_369 /* Build configuration list for PBXNativeTarget "SwiftySimpleKeychain" */;
+			buildPhases = (
+				OBJ_372 /* Sources */,
+				OBJ_387 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftySimpleKeychain;
+			productName = SwiftySimpleKeychain;
+			productReference = "swiftysimplekeychain::SwiftySimpleKeychain::Product" /* SwiftySimpleKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"swiftysimplekeychain::SwiftySimpleKeychainTests" /* SwiftySimpleKeychainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_402 /* Build configuration list for PBXNativeTarget "SwiftySimpleKeychainTests" */;
+			buildPhases = (
+				OBJ_405 /* Sources */,
+				OBJ_407 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_417 /* PBXTargetDependency */,
+				OBJ_418 /* PBXTargetDependency */,
+				OBJ_419 /* PBXTargetDependency */,
+				OBJ_420 /* PBXTargetDependency */,
+				OBJ_421 /* PBXTargetDependency */,
+				OBJ_422 /* PBXTargetDependency */,
+				OBJ_423 /* PBXTargetDependency */,
+				OBJ_424 /* PBXTargetDependency */,
+				OBJ_425 /* PBXTargetDependency */,
+				3FC4E58E27F4B37200625F2E /* PBXTargetDependency */,
+			);
+			name = SwiftySimpleKeychainTests;
+			productName = SwiftySimpleKeychainTests;
+			productReference = "swiftysimplekeychain::SwiftySimpleKeychainTests::Product" /* SwiftySimpleKeychainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"swiftysimplekeychain::SwiftySimpleKeychain_RSAHelper" /* SwiftySimpleKeychain_RSAHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_427 /* Build configuration list for PBXNativeTarget "SwiftySimpleKeychain_RSAHelper" */;
+			buildPhases = (
+				OBJ_430 /* Sources */,
+				OBJ_435 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_437 /* PBXTargetDependency */,
+			);
+			name = SwiftySimpleKeychain_RSAHelper;
+			productName = SwiftySimpleKeychain_RSAHelper;
+			productReference = "swiftysimplekeychain::SwiftySimpleKeychain_RSAHelper::Product" /* SwiftySimpleKeychain_RSAHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"swiftysimplekeychain::SwiftySimpleKeychain_RSAHelperTests" /* SwiftySimpleKeychain_RSAHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_438 /* Build configuration list for PBXNativeTarget "SwiftySimpleKeychain_RSAHelperTests" */;
+			buildPhases = (
+				OBJ_441 /* Sources */,
+				OBJ_443 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_454 /* PBXTargetDependency */,
+				OBJ_455 /* PBXTargetDependency */,
+				OBJ_456 /* PBXTargetDependency */,
+				OBJ_457 /* PBXTargetDependency */,
+				OBJ_458 /* PBXTargetDependency */,
+				OBJ_459 /* PBXTargetDependency */,
+				OBJ_460 /* PBXTargetDependency */,
+				OBJ_461 /* PBXTargetDependency */,
+				OBJ_462 /* PBXTargetDependency */,
+				OBJ_463 /* PBXTargetDependency */,
+				3FC4E59027F4B37600625F2E /* PBXTargetDependency */,
+			);
+			name = SwiftySimpleKeychain_RSAHelperTests;
+			productName = SwiftySimpleKeychain_RSAHelperTests;
+			productReference = "swiftysimplekeychain::SwiftySimpleKeychain_RSAHelperTests::Product" /* SwiftySimpleKeychain_RSAHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					3FC4E57C27F4B36C00625F2E = {
+						CreatedOnToolsVersion = 13.3;
+						DevelopmentTeam = 2U378HJ7FG;
+						ProvisioningStyle = Automatic;
+					};
+					"swiftysimplekeychain::SwiftySimpleKeychainTests" = {
+						TestTargetID = 3FC4E57C27F4B36C00625F2E;
+					};
+					"swiftysimplekeychain::SwiftySimpleKeychain_RSAHelperTests" = {
+						TestTargetID = 3FC4E57C27F4B36C00625F2E;
+					};
+				};
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwiftySimpleKeychain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_158 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"cwlcatchexception::CwlCatchException" /* CwlCatchException */,
+				"cwlcatchexception::SwiftPMPackageDescription" /* CwlCatchExceptionPackageDescription */,
+				"cwlcatchexception::CwlCatchExceptionSupport" /* CwlCatchExceptionSupport */,
+				"cwlpreconditiontesting::CwlMachBadInstructionHandler" /* CwlMachBadInstructionHandler */,
+				"cwlpreconditiontesting::CwlPosixPreconditionTesting" /* CwlPosixPreconditionTesting */,
+				"cwlpreconditiontesting::CwlPreconditionTesting" /* CwlPreconditionTesting */,
+				"cwlpreconditiontesting::SwiftPMPackageDescription" /* CwlPreconditionTestingPackageDescription */,
+				"nimble::Nimble" /* Nimble */,
+				"nimble::SwiftPMPackageDescription" /* NimblePackageDescription */,
+				"quick::Quick" /* Quick */,
+				"quick::QuickObjCRuntime" /* QuickObjCRuntime */,
+				"quick::SwiftPMPackageDescription" /* QuickPackageDescription */,
+				"swiftysimplekeychain::SwiftySimpleKeychain" /* SwiftySimpleKeychain */,
+				"swiftysimplekeychain::SwiftPMPackageDescription" /* SwiftySimpleKeychainPackageDescription */,
+				"swiftysimplekeychain::SwiftySimpleKeychainPackageTests::ProductTarget" /* SwiftySimpleKeychainPackageTests */,
+				"swiftysimplekeychain::SwiftySimpleKeychainTests" /* SwiftySimpleKeychainTests */,
+				"swiftysimplekeychain::SwiftySimpleKeychain_RSAHelper" /* SwiftySimpleKeychain_RSAHelper */,
+				"swiftysimplekeychain::SwiftySimpleKeychain_RSAHelperTests" /* SwiftySimpleKeychain_RSAHelperTests */,
+				3FC4E57C27F4B36C00625F2E /* iOSTestHostApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FC4E57B27F4B36C00625F2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC4E58727F4B36C00625F2E /* Preview Assets.xcassets in Resources */,
+				3FC4E58427F4B36C00625F2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FC4E57927F4B36C00625F2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC4E58227F4B36C00625F2E /* ContentView.swift in Sources */,
+				3FC4E58027F4B36C00625F2E /* iOSTestHostAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_189 /* CwlCatchException.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_198 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_199 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_204 /* CwlCatchException.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_210 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_211 /* CwlMachBadInstructionHandler.m in Sources */,
+				OBJ_212 /* mach_excServer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_221 /* CwlCatchBadInstructionPosix.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_228 /* CwlBadInstructionException.swift in Sources */,
+				OBJ_229 /* CwlCatchBadInstruction.swift in Sources */,
+				OBJ_230 /* CwlDarwinDefinitions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_243 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_249 /* AdapterProtocols.swift in Sources */,
+				OBJ_250 /* AssertionDispatcher.swift in Sources */,
+				OBJ_251 /* AssertionRecorder.swift in Sources */,
+				OBJ_252 /* NMBExpectation.swift in Sources */,
+				OBJ_253 /* NimbleEnvironment.swift in Sources */,
+				OBJ_254 /* NimbleXCTestHandler.swift in Sources */,
+				OBJ_255 /* ExceptionCapture.swift in Sources */,
+				OBJ_256 /* DSL+Wait.swift in Sources */,
+				OBJ_257 /* DSL.swift in Sources */,
+				OBJ_258 /* Expectation.swift in Sources */,
+				OBJ_259 /* ExpectationMessage.swift in Sources */,
+				OBJ_260 /* Expression.swift in Sources */,
+				OBJ_261 /* FailureMessage.swift in Sources */,
+				OBJ_262 /* AllPass.swift in Sources */,
+				OBJ_263 /* Async.swift in Sources */,
+				OBJ_264 /* BeAKindOf.swift in Sources */,
+				OBJ_265 /* BeAnInstanceOf.swift in Sources */,
+				OBJ_266 /* BeCloseTo.swift in Sources */,
+				OBJ_267 /* BeEmpty.swift in Sources */,
+				OBJ_268 /* BeGreaterThan.swift in Sources */,
+				OBJ_269 /* BeGreaterThanOrEqualTo.swift in Sources */,
+				OBJ_270 /* BeIdenticalTo.swift in Sources */,
+				OBJ_271 /* BeLessThan.swift in Sources */,
+				OBJ_272 /* BeLessThanOrEqual.swift in Sources */,
+				OBJ_273 /* BeLogical.swift in Sources */,
+				OBJ_274 /* BeNil.swift in Sources */,
+				OBJ_275 /* BeResult.swift in Sources */,
+				OBJ_276 /* BeVoid.swift in Sources */,
+				OBJ_277 /* BeWithin.swift in Sources */,
+				OBJ_278 /* BeginWith.swift in Sources */,
+				OBJ_279 /* BeginWithPrefix.swift in Sources */,
+				OBJ_280 /* Contain.swift in Sources */,
+				OBJ_281 /* ContainElementSatisfying.swift in Sources */,
+				OBJ_282 /* ElementsEqual.swift in Sources */,
+				OBJ_283 /* EndWith.swift in Sources */,
+				OBJ_284 /* Equal+Tuple.swift in Sources */,
+				OBJ_285 /* Equal.swift in Sources */,
+				OBJ_286 /* HaveCount.swift in Sources */,
+				OBJ_287 /* Match.swift in Sources */,
+				OBJ_288 /* MatchError.swift in Sources */,
+				OBJ_289 /* MatcherProtocols.swift in Sources */,
+				OBJ_290 /* PostNotification.swift in Sources */,
+				OBJ_291 /* Predicate.swift in Sources */,
+				OBJ_292 /* RaisesException.swift in Sources */,
+				OBJ_293 /* SatisfyAllOf.swift in Sources */,
+				OBJ_294 /* SatisfyAnyOf.swift in Sources */,
+				OBJ_295 /* ThrowAssertion.swift in Sources */,
+				OBJ_296 /* ThrowError.swift in Sources */,
+				OBJ_297 /* ToSucceed.swift in Sources */,
+				OBJ_298 /* Await.swift in Sources */,
+				OBJ_299 /* DispatchTimeInterval.swift in Sources */,
+				OBJ_300 /* Errors.swift in Sources */,
+				OBJ_301 /* SourceLocation.swift in Sources */,
+				OBJ_302 /* Stringers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_318 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_319 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_325 /* Behavior.swift in Sources */,
+				OBJ_326 /* Callsite.swift in Sources */,
+				OBJ_327 /* Configuration.swift in Sources */,
+				OBJ_328 /* QuickConfiguration.swift in Sources */,
+				OBJ_329 /* DSL.swift in Sources */,
+				OBJ_330 /* World+DSL.swift in Sources */,
+				OBJ_331 /* ErrorUtility.swift in Sources */,
+				OBJ_332 /* Example.swift in Sources */,
+				OBJ_333 /* ExampleGroup.swift in Sources */,
+				OBJ_334 /* ExampleMetadata.swift in Sources */,
+				OBJ_335 /* Filter.swift in Sources */,
+				OBJ_336 /* Closures.swift in Sources */,
+				OBJ_337 /* ExampleHooks.swift in Sources */,
+				OBJ_338 /* HooksPhase.swift in Sources */,
+				OBJ_339 /* SuiteHooks.swift in Sources */,
+				OBJ_340 /* NSBundle+CurrentTestBundle.swift in Sources */,
+				OBJ_341 /* QuickMain.swift in Sources */,
+				OBJ_342 /* QuickSelectedTestSuiteBuilder.swift in Sources */,
+				OBJ_343 /* QuickSpec.swift in Sources */,
+				OBJ_344 /* QuickTestObservation.swift in Sources */,
+				OBJ_345 /* QuickTestSuite.swift in Sources */,
+				OBJ_346 /* String+C99ExtendedIdentifier.swift in Sources */,
+				OBJ_347 /* URL+FileName.swift in Sources */,
+				OBJ_348 /* World.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_357 /* QuickSpecBase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_367 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_373 /* SwiftySimpleKeychain+Delete.swift in Sources */,
+				OBJ_374 /* SwiftySimpleKeychain+Get.swift in Sources */,
+				OBJ_375 /* SwiftySimpleKeychain+Set.swift in Sources */,
+				OBJ_376 /* SwiftySimpleKeychain+BaseQuery.swift in Sources */,
+				OBJ_377 /* SwiftySimpleKeychain+FindQuery.swift in Sources */,
+				OBJ_378 /* SwiftySimpleKeychain+NewQuery.swift in Sources */,
+				OBJ_379 /* SwiftySimpleKeychain+UpdateQuery.swift in Sources */,
+				OBJ_380 /* SwiftySimpleKeychainError+Init.swift in Sources */,
+				OBJ_381 /* DataErrorResult.swift in Sources */,
+				OBJ_382 /* StringErrorResult.swift in Sources */,
+				OBJ_383 /* VoidErrorResult.swift in Sources */,
+				OBJ_384 /* SwiftySimpleKeychain.swift in Sources */,
+				OBJ_385 /* SwiftySimpleKeychainError.swift in Sources */,
+				OBJ_386 /* SwiftySimpleKeychainItemAccessible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_393 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_406 /* SwiftySimpleKeychainSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_430 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_431 /* SwiftySimpleKeychain+RSAHelper.swift in Sources */,
+				OBJ_432 /* SwiftySimpleKeychainError+RSAHelperInit.swift in Sources */,
+				OBJ_433 /* SecKeyErrorResult.swift in Sources */,
+				OBJ_434 /* SwiftySimpleKeychainRSAKeySize.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_442 /* SwiftySimpleKeychain_RSAHelperSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FC4E58E27F4B37200625F2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC4E57C27F4B36C00625F2E /* iOSTestHostApp */;
+			targetProxy = 3FC4E58D27F4B37200625F2E /* PBXContainerItemProxy */;
+		};
+		3FC4E59027F4B37600625F2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC4E57C27F4B36C00625F2E /* iOSTestHostApp */;
+			targetProxy = 3FC4E58F27F4B37600625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_192 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlcatchexception::CwlCatchExceptionSupport" /* CwlCatchExceptionSupport */;
+			targetProxy = 3FC4E56027F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_235 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlcatchexception::CwlCatchException" /* CwlCatchException */;
+			targetProxy = 3FC4E55F27F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlcatchexception::CwlCatchExceptionSupport" /* CwlCatchExceptionSupport */;
+			targetProxy = 3FC4E56127F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_237 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlpreconditiontesting::CwlMachBadInstructionHandler" /* CwlMachBadInstructionHandler */;
+			targetProxy = 3FC4E56227F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlpreconditiontesting::CwlPosixPreconditionTesting" /* CwlPosixPreconditionTesting */;
+			targetProxy = 3FC4E55D27F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlpreconditiontesting::CwlPreconditionTesting" /* CwlPreconditionTesting */;
+			targetProxy = 3FC4E55E27F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlcatchexception::CwlCatchException" /* CwlCatchException */;
+			targetProxy = 3FC4E56327F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlcatchexception::CwlCatchExceptionSupport" /* CwlCatchExceptionSupport */;
+			targetProxy = 3FC4E56427F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlpreconditiontesting::CwlMachBadInstructionHandler" /* CwlMachBadInstructionHandler */;
+			targetProxy = 3FC4E56527F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "quick::QuickObjCRuntime" /* QuickObjCRuntime */;
+			targetProxy = 3FC4E56C27F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_398 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swiftysimplekeychain::SwiftySimpleKeychain_RSAHelperTests" /* SwiftySimpleKeychain_RSAHelperTests */;
+			targetProxy = 3FC4E58B27F4B36D00625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_400 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swiftysimplekeychain::SwiftySimpleKeychainTests" /* SwiftySimpleKeychainTests */;
+			targetProxy = 3FC4E58C27F4B36D00625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_417 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "nimble::Nimble" /* Nimble */;
+			targetProxy = 3FC4E55C27F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_418 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlpreconditiontesting::CwlPosixPreconditionTesting" /* CwlPosixPreconditionTesting */;
+			targetProxy = 3FC4E56627F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_419 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlpreconditiontesting::CwlPreconditionTesting" /* CwlPreconditionTesting */;
+			targetProxy = 3FC4E56727F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlcatchexception::CwlCatchException" /* CwlCatchException */;
+			targetProxy = 3FC4E56827F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlcatchexception::CwlCatchExceptionSupport" /* CwlCatchExceptionSupport */;
+			targetProxy = 3FC4E56927F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlpreconditiontesting::CwlMachBadInstructionHandler" /* CwlMachBadInstructionHandler */;
+			targetProxy = 3FC4E56A27F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_423 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "quick::Quick" /* Quick */;
+			targetProxy = 3FC4E56B27F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "quick::QuickObjCRuntime" /* QuickObjCRuntime */;
+			targetProxy = 3FC4E56D27F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swiftysimplekeychain::SwiftySimpleKeychain" /* SwiftySimpleKeychain */;
+			targetProxy = 3FC4E56E27F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_437 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swiftysimplekeychain::SwiftySimpleKeychain" /* SwiftySimpleKeychain */;
+			targetProxy = 3FC4E55B27F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_454 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "nimble::Nimble" /* Nimble */;
+			targetProxy = 3FC4E56F27F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_455 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlpreconditiontesting::CwlPosixPreconditionTesting" /* CwlPosixPreconditionTesting */;
+			targetProxy = 3FC4E57027F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_456 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlpreconditiontesting::CwlPreconditionTesting" /* CwlPreconditionTesting */;
+			targetProxy = 3FC4E57127F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlcatchexception::CwlCatchException" /* CwlCatchException */;
+			targetProxy = 3FC4E57227F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlcatchexception::CwlCatchExceptionSupport" /* CwlCatchExceptionSupport */;
+			targetProxy = 3FC4E57327F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "cwlpreconditiontesting::CwlMachBadInstructionHandler" /* CwlMachBadInstructionHandler */;
+			targetProxy = 3FC4E57427F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "quick::Quick" /* Quick */;
+			targetProxy = 3FC4E57527F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_461 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "quick::QuickObjCRuntime" /* QuickObjCRuntime */;
+			targetProxy = 3FC4E57627F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_462 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swiftysimplekeychain::SwiftySimpleKeychain_RSAHelper" /* SwiftySimpleKeychain_RSAHelper */;
+			targetProxy = 3FC4E57727F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+		OBJ_463 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swiftysimplekeychain::SwiftySimpleKeychain" /* SwiftySimpleKeychain */;
+			targetProxy = 3FC4E57827F4B35000625F2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FC4E58827F4B36C00625F2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSTestHostApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 2U378HJ7FG;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.eaceto.iOSTestHostApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FC4E58927F4B36C00625F2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSTestHostApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 2U378HJ7FG;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.eaceto.iOSTestHostApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		OBJ_186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include",
+					"$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/CwlCatchException_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = CwlCatchException;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CwlCatchException;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include",
+					"$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/CwlCatchException_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = CwlCatchException;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CwlCatchException;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/CwlCatchExceptionSupport_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CwlCatchExceptionSupport;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = CwlCatchExceptionSupport;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/CwlCatchExceptionSupport_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CwlCatchExceptionSupport;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = CwlCatchExceptionSupport;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_208 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/CwlMachBadInstructionHandler_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CwlMachBadInstructionHandler;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = CwlMachBadInstructionHandler;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/CwlMachBadInstructionHandler_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CwlMachBadInstructionHandler;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = CwlMachBadInstructionHandler;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/CwlPosixPreconditionTesting_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CwlPosixPreconditionTesting;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CwlPosixPreconditionTesting;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/CwlPosixPreconditionTesting_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CwlPosixPreconditionTesting;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CwlPosixPreconditionTesting;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include",
+					"$(SRCROOT)/.build/checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include",
+					"$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/CwlPreconditionTesting_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = CwlPreconditionTesting;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CwlPreconditionTesting;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include",
+					"$(SRCROOT)/.build/checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include",
+					"$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/CwlPreconditionTesting_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = CwlPreconditionTesting;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CwlPreconditionTesting;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include",
+					"$(SRCROOT)/.build/checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include",
+					"$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/Nimble_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Nimble;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Nimble;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include",
+					"$(SRCROOT)/.build/checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include",
+					"$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/Nimble_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Nimble;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Nimble;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.4.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.4.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Quick/Sources/QuickObjCRuntime/include",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/Quick_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Quick;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Quick;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Quick/Sources/QuickObjCRuntime/include",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/Quick_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Quick;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Quick;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Quick/Sources/QuickObjCRuntime/include",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/QuickObjCRuntime_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = QuickObjCRuntime;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = QuickObjCRuntime;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Quick/Sources/QuickObjCRuntime/include",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/QuickObjCRuntime_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = QuickObjCRuntime;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = QuickObjCRuntime;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "SWIFTYSIMPLEKEYCHAIN_VERSION=1.0.1";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/SwiftySimpleKeychain_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftySimpleKeychain;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftySimpleKeychain;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "SWIFTYSIMPLEKEYCHAIN_VERSION=1.0.1";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/SwiftySimpleKeychain_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftySimpleKeychain;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftySimpleKeychain;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.5.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -package-description-version 5.5.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include",
+					"$(SRCROOT)/.build/checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include",
+					"$(SRCROOT)/.build/checkouts/Quick/Sources/QuickObjCRuntime/include",
+					"$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/SwiftySimpleKeychainTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftySimpleKeychainTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTestHostApp.app/iOSTestHostApp";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		OBJ_404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include",
+					"$(SRCROOT)/.build/checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include",
+					"$(SRCROOT)/.build/checkouts/Quick/Sources/QuickObjCRuntime/include",
+					"$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/SwiftySimpleKeychainTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftySimpleKeychainTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTestHostApp.app/iOSTestHostApp";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		OBJ_428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "SWIFTYSIMPLEKEYCHAIN_RSAHELPER_VERSION=1.0.1";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/SwiftySimpleKeychain_RSAHelper_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "SwiftySimpleKeychain-RSAHelper";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftySimpleKeychain_RSAHelper;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "SWIFTYSIMPLEKEYCHAIN_RSAHELPER_VERSION=1.0.1";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/SwiftySimpleKeychain_RSAHelper_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "SwiftySimpleKeychain-RSAHelper";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftySimpleKeychain_RSAHelper;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include",
+					"$(SRCROOT)/.build/checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include",
+					"$(SRCROOT)/.build/checkouts/Quick/Sources/QuickObjCRuntime/include",
+					"$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/SwiftySimpleKeychain_RSAHelperTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftySimpleKeychain_RSAHelperTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTestHostApp.app/iOSTestHostApp";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		OBJ_440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include",
+					"$(SRCROOT)/.build/checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include",
+					"$(SRCROOT)/.build/checkouts/Quick/Sources/QuickObjCRuntime/include",
+					"$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport",
+				);
+				INFOPLIST_FILE = SwiftySimpleKeychain.xcodeproj/SwiftySimpleKeychain_RSAHelperTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftySimpleKeychain.xcodeproj/GeneratedModuleMap/CwlCatchExceptionSupport/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftySimpleKeychain_RSAHelperTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTestHostApp.app/iOSTestHostApp";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FC4E58A27F4B36C00625F2E /* Build configuration list for PBXNativeTarget "iOSTestHostApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC4E58827F4B36C00625F2E /* Debug */,
+				3FC4E58927F4B36C00625F2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_185 /* Build configuration list for PBXNativeTarget "CwlCatchException" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_186 /* Debug */,
+				OBJ_187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_195 /* Build configuration list for PBXNativeTarget "CwlCatchExceptionPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_196 /* Debug */,
+				OBJ_197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "SwiftySimpleKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_200 /* Build configuration list for PBXNativeTarget "CwlCatchExceptionSupport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_201 /* Debug */,
+				OBJ_202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_207 /* Build configuration list for PBXNativeTarget "CwlMachBadInstructionHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_208 /* Debug */,
+				OBJ_209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_217 /* Build configuration list for PBXNativeTarget "CwlPosixPreconditionTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_218 /* Debug */,
+				OBJ_219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_224 /* Build configuration list for PBXNativeTarget "CwlPreconditionTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_225 /* Debug */,
+				OBJ_226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_239 /* Build configuration list for PBXNativeTarget "CwlPreconditionTestingPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_240 /* Debug */,
+				OBJ_241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_245 /* Build configuration list for PBXNativeTarget "Nimble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_246 /* Debug */,
+				OBJ_247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_315 /* Build configuration list for PBXNativeTarget "NimblePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_316 /* Debug */,
+				OBJ_317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_321 /* Build configuration list for PBXNativeTarget "Quick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_322 /* Debug */,
+				OBJ_323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_353 /* Build configuration list for PBXNativeTarget "QuickObjCRuntime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_354 /* Debug */,
+				OBJ_355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_363 /* Build configuration list for PBXNativeTarget "QuickPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_364 /* Debug */,
+				OBJ_365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_369 /* Build configuration list for PBXNativeTarget "SwiftySimpleKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_370 /* Debug */,
+				OBJ_371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_389 /* Build configuration list for PBXNativeTarget "SwiftySimpleKeychainPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_390 /* Debug */,
+				OBJ_391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_395 /* Build configuration list for PBXAggregateTarget "SwiftySimpleKeychainPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_396 /* Debug */,
+				OBJ_397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_402 /* Build configuration list for PBXNativeTarget "SwiftySimpleKeychainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_403 /* Debug */,
+				OBJ_404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_427 /* Build configuration list for PBXNativeTarget "SwiftySimpleKeychain_RSAHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_428 /* Debug */,
+				OBJ_429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_438 /* Build configuration list for PBXNativeTarget "SwiftySimpleKeychain_RSAHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_439 /* Debug */,
+				OBJ_440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

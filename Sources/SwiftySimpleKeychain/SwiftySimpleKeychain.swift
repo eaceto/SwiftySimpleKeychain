@@ -26,12 +26,12 @@
 import Foundation
 #endif
 
-#if canImport(LocalAuthentication)
+#if (os(macOS) || os (iOS)) && canImport(LocalAuthentication)
 import LocalAuthentication
 #endif
 
 #if swift(<5.3)
-#error("Alamofire doesn't support Swift versions below 5.3")
+#error("SwiftySimpleKeychain doesn't support Swift versions below 5.3")
 #endif
 
 /**
@@ -58,24 +58,24 @@ public class SwiftySimpleKeychain {
     /**
      *  What type of accessibility the items stored will have. 
      *  All values are translated to `kSecAttrAccessible` constants.
-     *  Default value is A0SimpleKeychainItemAccessibleAfterFirstUnlock.
+     *  Default value is always.
      *  @see kSecAttrAccessible
      */
-    private(set) var defaultAccessiblity: SwiftySimpleKeychainItemAccessible
+    var defaultAccessiblity: SwiftySimpleKeychainItemAccessible
 
     /**
      *  Tells SwiftySimpleKeychain to use `kSecAttrAccessControl` instead of `kSecAttrAccessible`.
      *  It will work only in iOS 8+, defaulting to `kSecAttrAccessible` on lower version.
      *  Default value is False.
      */
-    private(set) var useAccessControl: Bool
+    var useAccessControl: Bool
 
     /**
     *  LocalAuthenticationContext used to access items. Default value is a new LAContext object
     */
-    #if canImport(LocalAuthentication)
+#if (os(macOS) || os (iOS)) && canImport(LocalAuthentication)
     private(set) var localAuthenticationContext: LAContext
-    #endif
+#endif
 
     /**
      * Instantiates a SwiftySimpleKeychain
@@ -91,15 +91,16 @@ public class SwiftySimpleKeychain {
     public init(with service: String = "default", accessGroup: String? = nil) {
         self.service = service
         self.accessGroup = accessGroup
-        self.defaultAccessiblity = .afterFirstUnlock
+        self.defaultAccessiblity = .afterFirstUnlockThisDeviceOnly
         self.useAccessControl = false
 
         // This does not apply to watchOS, tvOS and Linux
         // and all future platforms where LocalAuthentication is not available
-        #if canImport(LocalAuthentication)
+        
+#if (os(macOS) || os (iOS)) && canImport(LocalAuthentication)
         localAuthenticationContext = LAContext()
         localAuthenticationContext.touchIDAuthenticationAllowableReuseDuration = 0
-        #endif
+#endif
     }
 
     /**
@@ -115,7 +116,7 @@ public class SwiftySimpleKeychain {
     func setTouchIDAuthenticationAllowableReuse(duration: TimeInterval) {
         // This does not apply to watchOS, tvOS and Linux
         // and all future platforms where LocalAuthentication is not available
-        #if canImport(LocalAuthentication)
+#if (os(macOS) || os (iOS)) && canImport(LocalAuthentication)
         if duration <= 0 {
             localAuthenticationContext.touchIDAuthenticationAllowableReuseDuration = 0
         } else if duration >= LATouchIDAuthenticationMaximumAllowableReuseDuration {
@@ -124,7 +125,7 @@ public class SwiftySimpleKeychain {
         } else {
             localAuthenticationContext.touchIDAuthenticationAllowableReuseDuration = duration
         }
-        #endif
+#endif
     }
 }
 

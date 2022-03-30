@@ -41,7 +41,7 @@ class SwiftySimpleKeychainSpec: QuickSpec {
                 it("should init with default values") {
                     keychain = SwiftySimpleKeychain()
                     expect(keychain.accessGroup).to(beNil())
-                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlock))
+                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlockThisDeviceOnly))
                     expect(keychain.useAccessControl).to(beFalsy())
                 }
 
@@ -49,7 +49,7 @@ class SwiftySimpleKeychainSpec: QuickSpec {
                     keychain = SwiftySimpleKeychain(with: kKeychainService)
                     expect(keychain.accessGroup).to(beNil())
                     expect(keychain.service).to(equal(kKeychainService))
-                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlock))
+                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlockThisDeviceOnly))
                     expect(keychain.useAccessControl).to(beFalsy())
                 }
 
@@ -57,14 +57,14 @@ class SwiftySimpleKeychainSpec: QuickSpec {
                     keychain = SwiftySimpleKeychain(with: kKeychainService, accessGroup: "Group")
                     expect(keychain.accessGroup).to(equal("Group"))
                     expect(keychain.service).to(equal(kKeychainService))
-                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlock))
+                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlockThisDeviceOnly))
                     expect(keychain.useAccessControl).to(beFalsy())
                 }
                 
                 it("should init with default values // using the static method") {
                     keychain = SwiftySimpleKeychain.with()
                     expect(keychain.accessGroup).to(beNil())
-                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlock))
+                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlockThisDeviceOnly))
                     expect(keychain.useAccessControl).to(beFalsy())
                 }
                 
@@ -72,7 +72,7 @@ class SwiftySimpleKeychainSpec: QuickSpec {
                     keychain = SwiftySimpleKeychain.with(kKeychainService)
                     expect(keychain.accessGroup).to(beNil())
                     expect(keychain.service).to(equal(kKeychainService))
-                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlock))
+                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlockThisDeviceOnly))
                     expect(keychain.useAccessControl).to(beFalsy())
                 }
 
@@ -80,7 +80,7 @@ class SwiftySimpleKeychainSpec: QuickSpec {
                     keychain = SwiftySimpleKeychain.with(kKeychainService, accessGroup: "Group")
                     expect(keychain.accessGroup).to(equal("Group"))
                     expect(keychain.service).to(equal(kKeychainService))
-                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlock))
+                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlockThisDeviceOnly))
                     expect(keychain.useAccessControl).to(beFalsy())
                 }
 
@@ -90,7 +90,7 @@ class SwiftySimpleKeychainSpec: QuickSpec {
                 it("should create with default values") {
                     keychain = SwiftySimpleKeychain()
                     expect(keychain.accessGroup).to(beNil())
-                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlock))
+                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlockThisDeviceOnly))
                     expect(keychain.useAccessControl).to(beFalsy())
                 }
 
@@ -98,7 +98,7 @@ class SwiftySimpleKeychainSpec: QuickSpec {
                     keychain = SwiftySimpleKeychain(with: kKeychainService)
                     expect(keychain.accessGroup).to(beNil())
                     expect(keychain.service).to(equal(kKeychainService))
-                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlock))
+                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlockThisDeviceOnly))
                     expect(keychain.useAccessControl).to(beFalsy())
                 }
 
@@ -106,7 +106,7 @@ class SwiftySimpleKeychainSpec: QuickSpec {
                     keychain = SwiftySimpleKeychain(with: kKeychainService, accessGroup: "Group")
                     expect(keychain.accessGroup).to(equal("Group"))
                     expect(keychain.service).to(equal(kKeychainService))
-                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlock))
+                    expect(keychain.defaultAccessiblity).to(equal(SwiftySimpleKeychainItemAccessible.afterFirstUnlockThisDeviceOnly))
                     expect(keychain.useAccessControl).to(beFalsy())
                 }
             }
@@ -278,7 +278,7 @@ class SwiftySimpleKeychainSpec: QuickSpec {
                     keychain = SwiftySimpleKeychain(with: kKeychainService)
                 }
                 
-                #if canImport(LocalAuthentication)
+#if (os(macOS) || os (iOS)) && canImport(LocalAuthentication)
                 it("should set reusable time to zero") {
                     keychain.setTouchIDAuthenticationAllowableReuse(duration: TimeInterval.zero)
                     expect(keychain.localAuthenticationContext.touchIDAuthenticationAllowableReuseDuration).to(equal(0))
@@ -293,7 +293,7 @@ class SwiftySimpleKeychainSpec: QuickSpec {
                     keychain.setTouchIDAuthenticationAllowableReuse(duration: TimeInterval.infinity)
                     expect(keychain.localAuthenticationContext.touchIDAuthenticationAllowableReuseDuration).to(beGreaterThan(0))
                 }
-                #endif
+#endif
             }
         }
     }

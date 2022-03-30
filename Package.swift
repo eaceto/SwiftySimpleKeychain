@@ -14,7 +14,7 @@ let package = Package(
         .iOS(.v11),
         .macOS(.v10_12),
         .watchOS(.v5),
-        .tvOS(.v9)
+        .tvOS(.v11)
     ],
     products: [
         .library(
@@ -27,7 +27,6 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/danger/swift.git", .upToNextMajor(from: "3.12.0")),
         .package(name: "Quick", url: "https://github.com/Quick/Quick.git", .upToNextMajor(from: "4.0.0")),
         .package(url: "https://github.com/Quick/Nimble.git", branch: "main") // beResult matcher is not yet published
     ],
@@ -35,16 +34,14 @@ let package = Package(
         .target(
             name: libraryName,
             dependencies: [
-                .product(name: "Danger", package: "swift")
             ],
             cSettings: [
                 .define("\(libraryName)_VERSION".uppercased(), to: libraryVersion),
-            ]            
+            ]        
         ),
         .target(
             name: "\(libraryName)_RSAHelper",
             dependencies: [
-                .product(name: "Danger", package: "swift"),
                 Target.Dependency.target(name: libraryName)
             ],
             cSettings: [
